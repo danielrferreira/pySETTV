@@ -51,7 +51,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 ## Utility
 * File Export:
   - Graphs
-  - Table
+  - Tables
 * Reference:
   - Conditional and Loop Statements
     
