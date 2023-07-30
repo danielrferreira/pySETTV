@@ -2,7 +2,6 @@
 Codes to Sample, Transform, Explore, Train Models and Validate Models.
 
 ## Sample
-- File Import
 - Filter
 - Simple random sample
 - Stratified Sample
@@ -49,6 +48,10 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Graphical Model Validation for Binary Outcome
 - Graphical Model Validation for Quantitative Outcome
 ## Utility
+* File Import:
+  - csv Import
+  - Opening and Writing on Files
+  - Multiple files handling
 * File Export:
   - Graphs
   - Tables
