@@ -8,4 +8,4 @@
   - [Functions](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Functions)
   - [Files](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Files)
   - [Modules and Packages](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Packages%20and%20Modules)
-  - [Errors]()
+  - [Errors](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Errors)
