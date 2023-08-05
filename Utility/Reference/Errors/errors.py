@@ -101,21 +101,57 @@ x=3/0
 # UnicodeError: Unicode-related encoding or decoding error inside a program 
 # ValueError: Values suplied not appropriate
 
+
+
 #%%
 # Handling Exceptions with try, except, else and finally statements
 
 #%%
-x = input('Enter the first number: ')
-y = input('Enter the second number: ')
-z=int(x)/int(y)
+x = 3
+y = 0
+z=x/y
 print(z) #ZeroDivisionError if y is 0
 
 #%%
-# Solution
-x = input('Enter the first number: ')
-y = input('Enter the second number: ')
+# This code would return a ZeroDivisionError. What we can do is use 
+# try/exception/finally statements to overcome the error
+# try test if works, if it works it runs, if not it checks for the exception 
+# listed in the except statement. finnaly will always run
+
+#%%
+# Solution:
+x = 3
+y = 0
 try:
-    z=int(x)/int(y)
+    z=x/y
+except ZeroDivisionError:
+    z=9999
+    print('Zero Division was avoided, 9999 was passed instead')
+finally:    
+    print(z)
+
+#%% 
+# else can also be used to run something if no exception is found
+x = 3
+y = 0
+try:
+    z=x/y
+except ZeroDivisionError:
+    z=9999
+    print('Zero Division was avoided, 9999 was passed instead')
+else:
+    print('No Zero Division Found')
+finally:    
+    print(z)
+
+#%%
+# This code would have the same result, but only because the print is placed
+# after the ZeroDivisionError (the code block stop before the print)
+x = 3
+y = 0
+try:
+    z=x/y
+    print('No Zero Division Found')
 except ZeroDivisionError:
     z=9999
     print('Zero Division was avoided, 9999 was passed instead')
@@ -123,11 +159,35 @@ finally:
     print(z)
     
 #%%
-# One more example
-x='3'
-y=2
+# If no exception is listed in the except statement it runs the code if ANY 
+# exception happens
+x = 3
+y = 0
 try:
     z=x/y
-except TypeError:
-    z=int(x)/int(y)
-print(z)
+    print('No Zero Division Found')
+except:
+    z=9999
+    print('Zero Division was avoided, 9999 was passed instead')
+finally:    
+    print(z)
+
+#%%
+# We can also provide a tuple with the types of exceptions
+x=3
+y=0
+try:
+    z=x/y
+except (ZeroDivisionError,TypeError,NameError):
+    print('Strange Things Have Happened')
+else:
+    print('Everything Fine, the result is:',z)
+
+#%%
+# Raising a custom exception with raise statement
+x=-1
+try:
+    if x<0:
+        raise ValueError('Are you tripping? This number is negative')
+except ValueError as e:
+    print(e)
