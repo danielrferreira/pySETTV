@@ -1,12 +1,12 @@
 # Utility
-* File Import:
-  - Simple csv import
-  - Function that allow multiple data formats
-  - Import from scratch
+* [File Import](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import):
+  - [Simple csv import](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import/Simple%20CSV%20Import)
+  - [Function that allow multiple data formats](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import/Multiple%20Formats)
+  - [Import from scratch](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import/Import%20from%20scratch)
 * File Export:
   - Graphs
   - Tables
-* Reference:
+* [Reference](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference):
   - [Conditional and Loop Statements](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Conditional%20and%20Loops)
   - [Lists, Tuples and Dictionaries](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Lists%20Tuples%20and%20Dictionaries)
   - [Functions](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/Functions)
