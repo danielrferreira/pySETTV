@@ -1,4 +1,8 @@
 # Utility
+* File Import:
+  - Simple csv import
+  - Function that allow multiple data formats
+  - Import from scratch
 * File Export:
   - Graphs
   - Tables
