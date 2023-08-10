@@ -21,7 +21,7 @@ Created on Sat Aug  5 17:21:26 2023
 
 #%%
 def read_all(file_in,delimiter=','):
-    # This function import 5 types of files
+    '''This function import 5 types of files'''
     from pandas import read_csv,read_excel,read_sas,read_spss,read_stata
     pos = len(file_in)
     while pos > -8:
