@@ -1,5 +1,5 @@
 def import_file(input_file,header,delimiter=','):
-  #This function transform a txt file to a dictionary, given a header, a file and a delimiter(optional)  
+  '''This function transform a txt file to a dictionary, given a header, a file and a delimiter(optional)'''  
   with open(input_file,'r') as clash:
         #gets the first line to check how many commas
         temp=clash.readline() 
