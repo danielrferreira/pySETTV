@@ -9,13 +9,8 @@ def import_file(input_file,header,delimiter=','):
             if c==',':
                 n_col+=1
         clash.seek(0)
-        i=1
-        l=[0]
-        while i<n_col:
-            l.append(i)
-            i+=1
         result={1:1}
-        for g in l:
+        for g in range(n_col):
             result[header[g]]=[]
         n_rows=len(clash.readlines())
         
