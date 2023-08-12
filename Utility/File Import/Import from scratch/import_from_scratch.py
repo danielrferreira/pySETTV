@@ -1,20 +1,16 @@
 def import_file(input_file,header,delimiter=','):
-  '''This function transform a txt file to a dictionary, given a header, a file and a delimiter(optional)'''  
-  with open(input_file,'r') as clash:
-        #gets the first line to check how many commas
+    '''This function transform a txt file to a dictionary, given a header, a file and a delimiter(optional)'''  
+    with open(input_file,'r') as clash:
+        #gets the first line to check how many delimiters
         temp=clash.readline() 
-        #creates a list with the same number of columns as squential elements
-        n_col=1
-        for c in temp: 
-            if c==',':
-                n_col+=1
+        n_col=temp.count(delimiter)+1
+        #Comeback to the beginning of the file
         clash.seek(0)
         result={1:1}
         for g in range(n_col):
             result[header[g]]=[]
-        n_rows=len(clash.readlines())
-        
-        #Comeback the pointer to the begining of the file 
+        n_row=len(clash.readlines())
+        #Comeback to the beginning of the file
         clash.seek(0)
         #Line loop
         count_row=1
@@ -28,7 +24,7 @@ def import_file(input_file,header,delimiter=','):
                     start=pos+1 
                     count_var+=1
                     if count_var==n_col-1:
-                        if count_row==n_rows:
+                        if count_row==n_row:
                             result[header[count_var]].append(row[start:len(row)])
                         else: 
                             result[header[count_var]].append(row[start:len(row)-1])      
@@ -36,7 +32,7 @@ def import_file(input_file,header,delimiter=','):
             count_row+=1
     result.pop(1)
     return result
-
+  
 #%%
 #Function call example
 header = ('artist','album','country','region','year_artist','label','year_album')                    
@@ -48,4 +44,4 @@ def retrieve(i):
     print(db['album'][i],'by',db['artist'][i],'. Year of Release:', db['year_album'][i])
 
 #%%
-retrieve(38)     
+retrieve(30)     
