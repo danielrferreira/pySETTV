@@ -36,12 +36,12 @@ distance_from_origin(2, 2)
 #%%
 #Return is optional, 2 examples using the same function
 def distance_from_origin1(x,y):
-    #This function uses basic trigonometric to calculate distance from (0,0)
+    '''This function uses basic trigonometric to calculate distance from (0,0)'''
     return ma.sqrt(x**2+y**2)
 print(distance_from_origin1(3, 2))
 
 def distance_from_origin2(x,y):
-    #This function uses basic trigonometric to calculate distance from (0,0)
+    '''This function uses basic trigonometric to calculate distance from (0,0)'''
     print(ma.sqrt(x**2+y**2))
 distance_from_origin2(3,2)
 
@@ -53,14 +53,14 @@ distance_from_origin2(3,2)
 #Required is the one used, you declare the function by naming the arguments
 #Order is respected.
 def distance_from_origin1(x,y):
-    #This function uses basic trigonometric to calculate distance from (0,0)
+    '''This function uses basic trigonometric to calculate distance from (0,0)'''
     return ma.sqrt(x**2+y**2)
 print(distance_from_origin1(3, 2))
 
 #%%
 #Default is when you sets a default value for an argument
 def distance_from_origin1(x,y=2):
-    #This function uses basic trigonometric to calculate distance from (0,0)
+    '''This function uses basic trigonometric to calculate distance from (0,0)'''
     return ma.sqrt(x**2+y**2)
 print(distance_from_origin1(3)) #Only x is provided
 
@@ -68,7 +68,7 @@ print(distance_from_origin1(3)) #Only x is provided
 #Keyword uses the same syntax as required or default to declare, but you can 
 #call the function using the name of the argument
 def distance_from_origin1(x,y):
-    #This function uses basic trigonometric to calculate distance from (0,0)
+    '''This function uses basic trigonometric to calculate distance from (0,0)'''
     return ma.sqrt(x**2+y**2)
 print(distance_from_origin1(y=10, x=2))
 
@@ -76,7 +76,7 @@ print(distance_from_origin1(y=10, x=2))
 # Variable length is useful when you don't know how many arguments you need
 # the argument is passed as a tuple to the block of function code
 def sum_all(*args):
-    #This function adds all the values provided
+    '''This function adds all the values provided'''
     return sum(args)
 print(sum_all(1,2,3,4,5))
 print(sum_all(1,2,3,4,5,6,7,8,9,10))
@@ -100,17 +100,3 @@ def test():
 test()
 print(x) #Will output 1 because of last example, or NameError if you don't
 #ran the previous examples
-
-
-
-
-
-
-
-
-
-
-
-
-
-
