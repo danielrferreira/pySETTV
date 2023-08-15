@@ -19,9 +19,11 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
   - Nominal
   - Quantitative
   - Skewed Quantitative
+  - All types (automatically detect type of variable)
 * 2 dimensions, 1x1 Analysis:
   - Binary vs Categorical
   - Binary vs Quantitative
+  - Binary vs All types (automatically detect type of variable)
   - Categorical (low-cardinality) vs Quantitative
   - Categorical (high-cardinality) vs Quantitative
   - Quantitative vs Quantitative
