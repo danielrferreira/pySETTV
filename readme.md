@@ -49,6 +49,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Linear Regressions Assumptions Check
 - Graphical Model Validation for Binary Outcome
 - Graphical Model Validation for Quantitative Outcome
+- Model Comparison
 ## Utility
 * [File Import](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import):
   - [Simple csv import](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import/Simple%20CSV%20Import)
