@@ -13,6 +13,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Variable Recoding
 - Variable Math transformation
 - Missing handling
+- [String cleaning for text categorization]()
 ## Explore
 * One Dimension:
   - Binary 
