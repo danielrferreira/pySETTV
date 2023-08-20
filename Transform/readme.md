@@ -5,3 +5,4 @@
 - Variable Recoding
 - Variable Math transformation
 - Missing handling
+- [String cleaning for text categorization]()
