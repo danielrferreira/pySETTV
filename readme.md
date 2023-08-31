@@ -5,7 +5,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Filter
 - Simple random sample
 - Stratified Sample
-- Data Partition (Train, Validation, Test)(https://github.com/danielrferreira/pySTETV/tree/main/Sample/Data%20Partition)
+- [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySTETV/tree/main/Sample/Data%20Partition)
 ## Transform
 - Merge and Append Tables
 - Aggregate functions
