@@ -7,7 +7,7 @@ Created on Mon Sep  4 22:26:12 2023
 """
 
 #%%
-# This function splits the data into Train/Validation/Test
+# This function splits the data into Train/Validation/Test. This code used pandas sample method. If you need something faster I encourage you to change the code and use NumPy random module instead.
 def data_partition(data, train_ratio=0.5, val_ratio=0.5, test_ratio=0, seed=420):
     '''This function splits the data into train, validation and test, it return 2 data frames if test_ratio=0 or 3 data frames if test_ratio>0'''
     data_shuffle = data.sample(frac=1, random_state=seed).reset_index(drop=True)
