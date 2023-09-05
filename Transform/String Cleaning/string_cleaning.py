@@ -11,7 +11,7 @@ Created on Mon Sep  4 22:18:00 2023
 def remove_special_chars(text, sc='[~!@#$%^&*+-:,<>?]',rp='_'):
     '''This function will replace special characters listed on sc and replace with the rp character (default parameters: sc=[~!@#$%^&*+-:,<>?] rp=_'''
     from re import sub
-    return sub(sc,'_',text)
+    return sub(sc,rp,text)
     
 def truncate(text,max=32):
     '''This function will truncate a text to maximun length (default: max=32)'''
