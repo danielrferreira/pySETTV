@@ -1,5 +1,12 @@
-# Sample Function
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep  7 18:19:42 2023
 
+@author: danielferreira
+"""
+
+# Sample Function
 def sample(data_in,mode='percent',size_smp=0.2,repl=False,seed_smp=None):
     '''This function has two modes, percent and n. The first returns a sample given a percentage (mode='percent', size_smp=0.2), the second returns a sample with a specific n (mode='n', size_smp=1000)'''
     import numpy as np
@@ -28,19 +35,24 @@ def sample(data_in,mode='percent',size_smp=0.2,repl=False,seed_smp=None):
                 indices = np.random.choice(data_in.index, size=size_smp, replace=repl)
                 print(f'Sample has {size_smp} observations') 
                 return data_in.loc[indices]
-
-# Examples 
+            
+#%%
+# Examples:
 import pandas as pd
 baseball = pd.read_csv('/Users/danielferreira/Documents/repositories/pySTETV/Sample/Data Partition/baseball_stats_batting_2020_2023.csv')
 
+#%%
 # Simple 20% sample using arbitrary seed. It will return a different sample everytime you run.
 bb_sample = sample(baseball)
 
-# Changing seed
+#%%
+# Changing seed.
 bb_sample = sample(baseball,seed_smp=420)
 
-# Using mode 'n'
+#%%
+# Using mode 'n'.
 bb_sample = sample(baseball,mode='n',size_smp=1200)
 
-# Using sample size greater than size of the data frame. It will print a message
+#%%
+# Using sample size greater than size of the data frame. It will print a message.
 bb_sample = sample(baseball,mode='n',size_smp=1800)
