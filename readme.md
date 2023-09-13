@@ -6,7 +6,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - [Simple Random Sample](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Simple%20Random)
 - Stratified Sample
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Data%20Partition)
-## Transform
+## 02 - Transform
 - Merge and Append Tables
 - Aggregate functions
 - Filter
