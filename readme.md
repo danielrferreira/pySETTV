@@ -6,14 +6,14 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - [Simple Random Sample](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Simple%20Random)
 - Stratified Sample
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Data%20Partition)
-## Transform
+## 02 - Transform
 - Merge and Append Tables
 - Aggregate functions
 - Filter
 - Variable Recoding
 - Variable Math transformation
 - Missing handling
-- [String cleaning for text categorization](https://github.com/danielrferreira/pySTETV/blob/main/Transform/String%20Cleaning/String_cleaning.ipynb)
+- [String cleaning for text categorization](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/String%20Cleaning/String_cleaning.ipynb)
 ## Explore
 * One Dimension:
   - Binary 
