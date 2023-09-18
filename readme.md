@@ -44,7 +44,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Gradient Boosting
 - Neural Networks
 - Support Vector Machine
-## Validate Models
+## 05 - Validate Models
 - Fit Statistics for Quantitative Outcome
 - Fit Statistics for Binary Outcome
 - Linear Regressions Assumptions Check
