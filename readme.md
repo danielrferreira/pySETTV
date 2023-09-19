@@ -51,7 +51,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Graphical Model Validation for Binary Outcome
 - Graphical Model Validation for Quantitative Outcome
 - Model Comparison
-## Utility
+## 06 - Utility & References
 * [File Import](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import):
   - [Simple csv import](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import/Simple%20CSV%20Import)
   - [Function that allow multiple data formats](https://github.com/danielrferreira/pySTETV/tree/main/Utility/File%20Import/Multiple%20Formats)
