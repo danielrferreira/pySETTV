@@ -14,6 +14,6 @@
   - [Modules and Packages](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20&%20References/Reference/Packages%20and%20Modules)
   - [Errors](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20&%20References/Reference/Errors)
   - [OOP Topics](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20&%20References/Reference/OOP)
-  * Data
-    - Titanic.csv
-    - Baseball.csv
+* Data
+  - Titanic.csv
+  - Baseball.csv
