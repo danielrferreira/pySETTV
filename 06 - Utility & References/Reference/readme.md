@@ -5,4 +5,4 @@
   - [Files](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Files)
   - [Modules and Packages](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Modules%20and%20Packages)
   - [Errors](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Errors)
-  - [OOP Topics](https://github.com/danielrferreira/pySTETV/tree/main/Utility/Reference/OOP)
+  - [OOP Topics](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/OOP)
