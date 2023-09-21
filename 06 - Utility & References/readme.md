@@ -15,6 +15,6 @@
   - [Errors](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Errors)
   - [OOP Topics](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/OOP)
 
-* Data
+* [Data](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Data)
   - Titanic.csv
   - Baseball.csv
