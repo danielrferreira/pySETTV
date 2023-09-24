@@ -57,7 +57,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
   - [Function that allow multiple data formats](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Multiple%20Formats)
   - [Import from scratch](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Import%20from%20scratch)
 * [File Export](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/File%20Export):
-  - [Graphs]()
+  - [Graphs](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/File%20Export/Graphs)
   - [Tables](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/File%20Export/Tables)
 * [Reference](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference):
   - [Conditional and Loop Statements](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Conditional%20and%20Loops)
