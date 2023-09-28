@@ -67,6 +67,9 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
   - [Modules and Packages](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Modules%20and%20Packages)
   - [Errors](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/Errors)
   - [OOP Topics](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Reference/OOP)
+  - NumPy
+  - pandas
+  - matplotlib
 
 * [Data](https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Data):
   - [Titanic.csv](https://github.com/danielrferreira/pySTETV/blob/main/06%20-%20Utility%20%26%20References/Data/train_titanic.csv)
