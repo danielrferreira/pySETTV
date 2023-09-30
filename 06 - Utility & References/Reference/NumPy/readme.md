@@ -1,0 +1,3 @@
+# NumPy
+NumPy history goes back to 1995, when Jim Gugumin cretaed the numeric library. Until 2005, the array programming in python got fragmented. Travis Oliphant forged NumPy, bringing the community together around a single framework. It adds efficient methods to do mathematical operations including linear algebra, random number generation and Fourier transformation. It also added a C API to connect NumPy with C, C++ and FORTRAN libraries. Ndarray is an efficient multidimensional array that can be used to do matrix operations. NumPy-based algorithms are usually 10-100 more times faster than their pure Python counterparts.
+Please refer to the [offical documentation](https://numpy.org/).
