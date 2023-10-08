@@ -7,3 +7,6 @@
 - Gradient Boosting
 - Neural Networks
 - Support Vector Machine
+- Gaussian Naive Bayes
+- Multinominal Naive Bayes
+- K-Nearest Neighbors
