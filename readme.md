@@ -44,6 +44,9 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - Gradient Boosting
 - Neural Networks
 - Support Vector Machine
+- Gaussian Naive Bayes
+- Multinominal Naive Bayes
+- K-Nearest Neighbors
 ## 05 - Validate Models
 - Fit Statistics for Quantitative Outcome
 - Fit Statistics for Binary Outcome
