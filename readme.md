@@ -9,7 +9,6 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 ## 02 - Transform
 - [Merge and Append Tables](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/Merge%20and%20Append)
 - Aggregate functions
-- Filter
 - Variable Recoding
 - Variable Math transformation
 - Missing handling
