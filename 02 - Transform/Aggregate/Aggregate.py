@@ -27,4 +27,7 @@ hr_player = baseball.groupby('name')['home_run'].sum().reset_index()
 # cumsum and many others, see pandas documentation for all.
 
 #%%
-# Alternative
+# Alternative: You can also use pivot_table method
+data = {'customer_id': [1, 2, 1, 3, 2],'amount': [100, 150, 200, 50, 300]}
+orders = pd.DataFrame(data)
+customer_spending = pd.pivot_table(orders, index='customer_id', values='amount', aggfunc='sum').reset_index()
