@@ -8,7 +8,7 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Data%20Partition)
 ## 02 - Transform
 - [Merge and Append Tables](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/Merge%20and%20Append)
-- Aggregate functions
+- [Aggregate functions](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/Aggregate)
 - Variable Recoding
 - Variable Math transformation
 - Missing handling
