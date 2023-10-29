@@ -1,5 +1,6 @@
 # Explore
-* One Dimension:
+* Univariate:
+  - Missing Report
   - Binary
   - Nominal
   - Quantitative
