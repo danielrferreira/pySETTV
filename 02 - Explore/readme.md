@@ -1,11 +1,10 @@
 # Explore
 * Univariate:
   - Missing Report
-  - Binary
-  - Nominal
+  - Categorical
   - Quantitative
   - Skewed Quantitative
-* 2 dimensions, 1x1 Analysis:
+* Bivariate, pair-wise Analysis:
   - Binary vs Categorical
   - Binary vs Quantitative
   - Categorical (low-cardinality) vs Quantitative
@@ -16,5 +15,4 @@
   - Self Organized Maps
 * Dimension Reduction:
   - Principal Components
-  - Factorial Analysis
   - Feature Ranking

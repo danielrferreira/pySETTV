@@ -23,7 +23,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
   - Self Organized Maps
 * Dimension Reduction:
   - Principal Components
-* Feature Ranking
+  - Feature Ranking
 ## 03 - Transform
 - [Merge and Append Tables](https://github.com/danielrferreira/pySTETV/tree/main/03%20-%20Transform/Merge%20and%20Append)
 - [Aggregate functions](https://github.com/danielrferreira/pySTETV/tree/main/03%20-%20Transform/Aggregate)
