@@ -1,5 +1,5 @@
-# pySTETV (WIP)
-Codes to Sample, Transform, Explore, Train Models and Validate Models.
+# pySETTV (WIP)
+Codes to Sample, Explore, Transform, Train Models and Validate Models.
 
 ## 01 - Sample
 - [Filter](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Filter)
