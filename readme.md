@@ -6,25 +6,15 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
 - [Simple Random Sample](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Simple%20Random)
 - [Stratified Sample](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Stratified)
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySTETV/tree/main/01%20-%20Sample/Data%20Partition)
-## 02 - Transform
-- [Merge and Append Tables](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/Merge%20and%20Append)
-- [Aggregate functions](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/Aggregate)
-- Variable Recoding
-- Variable Math transformation
-- Missing handling
-- [String cleaning for text categorization](https://github.com/danielrferreira/pySTETV/tree/main/02%20-%20Transform/String%20Cleaning)
-## 03 - Explore
+## 02 - Explore
 * Univariate:
   - Missing Report
-  - Binary 
-  - Nominal
+  - Categorical
   - Quantitative
   - Skewed Quantitative
-  - All types (automatically detect type of variable)
-* 2 dimensions, 1x1 Analysis:
+* Bivariate, pair-wise Analysis:
   - Binary vs Categorical
   - Binary vs Quantitative
-  - Binary vs All types (automatically detect type of variable)
   - Categorical (low-cardinality) vs Quantitative
   - Categorical (high-cardinality) vs Quantitative
   - Quantitative vs Quantitative
@@ -33,8 +23,14 @@ Codes to Sample, Transform, Explore, Train Models and Validate Models.
   - Self Organized Maps
 * Dimension Reduction:
   - Principal Components
-  - Factorial Analysis
 * Feature Ranking
+## 03 - Transform
+- [Merge and Append Tables](https://github.com/danielrferreira/pySTETV/tree/main/03%20-%20Transform/Merge%20and%20Append)
+- [Aggregate functions](https://github.com/danielrferreira/pySTETV/tree/main/03%20-%20Transform/Aggregate)
+- Variable Recoding
+- Variable Math transformation
+- Missing handling
+- [String cleaning for text categorization](https://github.com/danielrferreira/pySTETV/tree/main/03%20-%20Transform/String%20Cleaning)
 ## 04 - Train Models
 - Linear Regression
 - Generalized Linear Models
