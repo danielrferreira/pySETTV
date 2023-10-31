@@ -1,6 +1,6 @@
 # Explore
 * [Table Overall Structure](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Overall%20Structure)
-* [Univariate]():
+* [Univariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate):
   - [Missing Report]()
   - Categorical
   - Quantitative
