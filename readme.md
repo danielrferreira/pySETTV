@@ -7,9 +7,9 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - [Stratified Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Stratified)
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Data%20Partition)
 ## [02 - Explore](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore)
-* Table Overall Structure
-* Univariate:
-  - Missing Report
+* [Table Overall Structure](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Overall%20Structure)
+* [Univariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate):
+  - [Missing Report](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Missing)
   - Categorical
   - Quantitative
   - Skewed Quantitative
