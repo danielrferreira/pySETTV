@@ -7,6 +7,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - [Stratified Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Stratified)
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Data%20Partition)
 ## 02 - Explore
+* Table Overall Structure
 * Univariate:
   - Missing Report
   - Categorical
