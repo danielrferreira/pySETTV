@@ -1,12 +1,12 @@
 # pySETTV (WIP)
 Codes to Sample, Explore, Transform, Train Models and Validate Models.
 
-## 01 - Sample
+## [01 - Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample)
 - [Filter](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Filter)
 - [Simple Random Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Simple%20Random)
 - [Stratified Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Stratified)
 - [Data Partition (Train, Validation, Test)](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Data%20Partition)
-## 02 - Explore
+## [02 - Explore](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore)
 * Table Overall Structure
 * Univariate:
   - Missing Report
