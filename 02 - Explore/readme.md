@@ -2,7 +2,7 @@
 * [Table Overall Structure](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Overall%20Structure)
 * [Univariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate):
   - [Missing Report](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Missing)
-  - Categorical
+  - [Categorical](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Categorical)
   - Quantitative
   - Skewed Quantitative
 * Bivariate, pair-wise Analysis:
