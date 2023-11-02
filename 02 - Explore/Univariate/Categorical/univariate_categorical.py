@@ -37,6 +37,9 @@ for x in cat_c:
     print(bat[x].value_counts(normalize=True))
 
 #%%
+# Another fast way to explore categorical columns is to use describe():
+bat[cat_c].describe()
+
 # Visually: Count Plots (Frequency Bar Charts)
 
 #%%
