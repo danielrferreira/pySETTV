@@ -11,7 +11,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 * [Univariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate):
   - [Missing Report](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Missing)
   - [Categorical](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Categorical)
-  - Quantitative
+  - [Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Quantitative)
   - Skewed Quantitative
 * Bivariate, pair-wise Analysis:
   - Binary vs Categorical
