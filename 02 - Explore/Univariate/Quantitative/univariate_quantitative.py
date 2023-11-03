@@ -28,12 +28,14 @@ bat[num_c].describe()
 # Visually exploration using a function that plots histograms:
 import seaborn as sns
 import matplotlib.pyplot as plt
-def hist_plots(data, columns, scale_graph=9, n_cols=3, aspect_ratio=2/3):
+def hist_plots(data, columns, rem_ol=False, thres=0.99, scale_graph=9, n_cols=3, aspect_ratio=2/3 ):
     '''Create multiple Histograms plots using a subset of variables specified.
     
     Args:
         data: Input data-frame containing variables we wish to plot.
         columns: Listing of column-names we wish to plot.
+        rem_ol: Remove observations greater than specific percentile defined by thres argument.
+        thres: Percentile that will be used if rem_ol=True.
         scale_graph: Adjust the total size of the graph.
         n_cols: Adjust how many graphs we have on each row.
         aspect_ratio: Adjust the aspect ratio of each individual graph. For squared graphs use 1/1.
@@ -47,7 +49,13 @@ def hist_plots(data, columns, scale_graph=9, n_cols=3, aspect_ratio=2/3):
     fig.suptitle(f'Histograms of {len(columns)} columns',y=1, size=15)
     axes=axes.flatten()
     for i,feature in enumerate(columns):
-        sns.histplot(data=data[feature],ax=axes[i], kde=True)
+        if rem_ol:
+            lim = data[feature].quantile([thres]).iloc[0]
+            x = data[feature][data[feature]<lim]
+            print(f'{feature}: Observations greater than P{round(thres*100)} removed')
+        else:
+            x=data[feature]
+        sns.histplot(data=x,ax=axes[i], kde=True)
     plt.tight_layout()
 
 #%%
