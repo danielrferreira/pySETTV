@@ -21,11 +21,11 @@ num_c = ['player_age', 'ab', 'pa', 'hit', 'single',
        'barrel_batted_rate', 'hp_to_1b', 'sprint_speed']
 
 #%%
-# Numerical exploration
-bat[num_c].describe()
+# We can use skew method to understand what are the most skewed columns:
+bat[num_c].skew().sort_values()
 
 #%%
-# Visually exploration using a function that plots histograms:
+# This function contains an argument to remove values greater than specific percentile: 
 import seaborn as sns
 import matplotlib.pyplot as plt
 def hist_plots(data, columns, rem_ol=False, thres=0.99, scale_graph=9, n_cols=3, aspect_ratio=2/3 ):
@@ -59,41 +59,12 @@ def hist_plots(data, columns, rem_ol=False, thres=0.99, scale_graph=9, n_cols=3,
     plt.tight_layout()
 
 #%%
-# Calling the function
-hist_plots(data=bat,columns=num_c)
+# Calling the function for skewed columns:
+skewed = ['triple','r_total_caught_stealing','r_total_stolen_base']
+hist_plots(data=bat,columns=skewed,rem_ol=True)
 
 #%%
-# Some people prefer boxplots:
-def box_plots(data, columns, scale_graph=9, n_cols=3, aspect_ratio=1/1):
-    '''Create multiple Box Plots using a subset of variables specified.
-    
-    Args:
-        data: Input data-frame containing variables we wish to plot.
-        columns: Listing of column-names we wish to plot.
-        scale_graph: Adjust the total size of the graph.
-        n_cols: Adjust how many graphs we have on each row.
-        aspect_ratio: Adjust the aspect ratio of each individual graph. For squared graphs use 1/1.
-    '''
-
-    # Adjusting how many rows the grid will have and proper sizes
-    n_rows = len(columns)//n_cols+(len(columns)%n_cols>0) 
-    fig, axes = plt.subplots(n_rows, n_cols, figsize=(scale_graph, (scale_graph/n_cols)*aspect_ratio*n_rows))
-
-    # Plotting
-    fig.suptitle(f'Box Plots of {len(columns)} columns',y=1, size=15)
-    axes=axes.flatten()
-    for i,feature in enumerate(columns):
-        sns.boxplot(y=data[feature],ax=axes[i])
-    plt.tight_layout()
-
-#%%
-# Calling the function:
-box_plots(bat,num_c)
-
-#%%
-# You can also have a look at skewness:
-bat[num_c].skew().sort_values()
-
-#%%
-# and kurtosis:
-bat[num_c].kurt().sort_values()
+# Another option would be to see how they look like after a log transformation.
+import numpy as np
+ln_bat = np.log(bat[skewed]+1)
+hist_plots(data=ln_bat,columns=skewed)
