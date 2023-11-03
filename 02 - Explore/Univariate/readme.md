@@ -3,4 +3,4 @@ The second step in an exploration (after looking at overall structure) is to und
 - [Missing Report](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Missing)
 - [Categorical Univariate Exploration](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Categorical)
 - [Quantitative Univariate Exploration](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Quantitative)
-- Skewed Quantitative Exploration
+- [Skewed Quantitative Exploration](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Skewed%20Quantitative)
