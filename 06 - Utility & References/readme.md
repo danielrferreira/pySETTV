@@ -16,7 +16,6 @@
   - [OOP Topics](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/OOP)
   - [NumPy](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/NumPy)
   - [pandas](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/pandas)
-  - matplotlib
 
 * [Data](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Data)
   - [Titanic.csv](https://github.com/danielrferreira/pySETTV/blob/main/06%20-%20Utility%20%26%20References/Data/train_titanic.csv)

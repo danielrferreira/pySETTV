@@ -8,4 +8,3 @@
   - [OOP Topics](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/OOP)
   - [NumPy](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/NumPy)
   - [pandas](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/pandas)
-  - matplotlib
