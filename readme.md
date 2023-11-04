@@ -13,7 +13,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
   - [Categorical](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Categorical)
   - [Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Quantitative)
   - [Skewed Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Skewed%20Quantitative)
-* [Bivariate, pair-wise Analysis]():
+* [Bivariate, pair-wise Analysis](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate):
   - Binary vs Categorical
   - Binary vs Quantitative
   - Categorical (low-cardinality) vs Quantitative
