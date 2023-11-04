@@ -13,7 +13,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
   - [Categorical](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Categorical)
   - [Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Quantitative)
   - [Skewed Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Skewed%20Quantitative)
-* Bivariate, pair-wise Analysis:
+* [Bivariate, pair-wise Analysis]():
   - Binary vs Categorical
   - Binary vs Quantitative
   - Categorical (low-cardinality) vs Quantitative
@@ -69,7 +69,6 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
   - [OOP Topics](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/OOP)
   - [NumPy](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/NumPy)
   - [pandas](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/pandas)
-  - matplotlib
 
 * [Data](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Data):
   - [Titanic.csv](https://github.com/danielrferreira/pySETTV/blob/main/06%20-%20Utility%20%26%20References/Data/train_titanic.csv)
