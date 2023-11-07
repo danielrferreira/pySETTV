@@ -14,19 +14,15 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
   - [Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Quantitative)
   - [Skewed Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Skewed%20Quantitative)
 * [Bivariate, pair-wise Analysis](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate):
-  - Binary Outcome vs:
-    - Binary Iputs
-    - Nominal Inputs (low cardinality)
-    - Nominal Inputs (high cardinality)
+  - [Binary Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Binary%20Outcome):
+    - Categorical Inputs
     - Quantitative Inputs 
   - Quantitative Outcome vs:
-    - Binary Iputs
-    - Nominal Inputs (low cardinality)
-    - Nominal Inputs (high cardinality)
+    - Categorical Inputs
     - Quantitative Inputs 
   - Nominal Outcome vs:
-    - Quantitative Inputs
     - Categorical Inputs
+    - Quantitative Inputs 
 * Unsupervised Learning:
   - Cluster
   - Self Organized Maps
