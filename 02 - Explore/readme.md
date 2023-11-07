@@ -6,10 +6,15 @@
   - [Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Quantitative)
   - [Skewed Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Skewed%20Quantitative)
 * [Bivariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate):
-  - [Binary vs Categorical](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Bin_vs_Cat)
-  - Binary vs Quantitative
-  - Categorical (high-cardinality) vs Quantitative
-  - Quantitative vs Quantitative
+  - Binary Outcome vs:
+    - Categorical Inputs
+    - Quantitative Inputs 
+  - Quantitative Outcome vs:
+    - Categorical Inputs
+    - Quantitative Inputs 
+  - Nominal Outcome vs:
+    - Categorical Inputs
+    - Quantitative Inputs 
 * Unsupervised Learning:
   - Cluster
   - Self Organized Maps
