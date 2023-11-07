@@ -5,7 +5,12 @@ In a modelling context, understand how two variables relationship looks like it 
 - Explain a model built using complex techniques that are difficult to interpret.
 
 This folder contains codes for the following cases:
-- [Binary vs Categorical](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Bin_vs_Cat)
-- Binary vs Quantitative
-- Categorical (high-cardinality) vs Quantitative
-- Quantitative vs Quantitative
+  - Binary Outcome vs:
+    - Categorical Inputs (Binary, Low Cardinality Nominal, High Cardinality Nominal)
+    - Quantitative Inputs 
+  - Quantitative Outcome vs:
+    - Categorical Inputs (Binary, Low Cardinality Nominal, High Cardinality Nominal)
+    - Quantitative Inputs 
+  - Nominal Outcome vs:
+    - Categorical Inputs (Binary, Low Cardinality Nominal, High Cardinality Nominal)
+    - Quantitative Inputs 
