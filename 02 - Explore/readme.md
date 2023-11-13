@@ -7,12 +7,9 @@
   - [Skewed Quantitative](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Skewed%20Quantitative)
 * [Bivariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate):
   - [Binary Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Binary%20Outcome):
-    - Categorical Inputs
+    - [Categorical Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Binary%20Outcome/Categorical%20Inputs)
     - Quantitative Inputs 
   - Quantitative Outcome vs:
-    - Categorical Inputs
-    - Quantitative Inputs 
-  - Nominal Outcome vs:
     - Categorical Inputs
     - Quantitative Inputs 
 * Unsupervised Learning:
