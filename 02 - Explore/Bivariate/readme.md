@@ -6,11 +6,9 @@ In a modelling context, understand how two variables relationship looks like it 
 
 This folder contains codes for the following cases:
   - [Binary Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Binary%20Outcome):
-    - Categorical Inputs (Binary, Low Cardinality Nominal, High Cardinality Nominal)
+    - [Categorical Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Binary%20Outcome/Categorical%20Inputs)
     - Quantitative Inputs 
   - Quantitative Outcome vs:
-    - Categorical Inputs (Binary, Low Cardinality Nominal, High Cardinality Nominal)
+    - Categorical Inputs
     - Quantitative Inputs 
-  - Nominal Outcome vs:
-    - Categorical Inputs (Binary, Low Cardinality Nominal, High Cardinality Nominal)
-    - Quantitative Inputs 
+
