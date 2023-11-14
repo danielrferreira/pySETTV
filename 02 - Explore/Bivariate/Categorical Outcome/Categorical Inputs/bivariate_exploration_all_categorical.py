@@ -93,7 +93,7 @@ cat_bivariate(bat_22_23,['year'], cat_c)
 #%%
 # If you want a list of variables sorted by level of association with each other, you can use this function:
 def log_worth(data,col1,col2):
-    '''Calculate -log of p-value of Chi-Square tests for any combination of categorigal variables. 
+    '''Calculate -log of p-value of Chi-Square tests for any combination of categorical variables. 
     
     Args:
         data: Data Frame
