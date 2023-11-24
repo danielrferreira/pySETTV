@@ -9,7 +9,7 @@
   - [Categorical Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Categorical%20Outcome):
     - [Categorical Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Categorical%20Outcome/Categorical%20Inputs)
     - [Quantitative Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Categorical%20Outcome/Quantitative%20Inputs)
-  - Quantitative Outcome vs:
+  - [Quantitative Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome):
     - Categorical Inputs
     - Quantitative Inputs 
 * Unsupervised Learning:
