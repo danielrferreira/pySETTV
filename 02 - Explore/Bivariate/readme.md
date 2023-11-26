@@ -10,5 +10,5 @@ This folder contains codes for the following cases:
     - [Quantitative Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Categorical%20Outcome/Quantitative%20Inputs)
   - [Quantitative Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome):
     - [Categorical Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome/Categorical%20Inputs)
-    - Quantitative Inputs 
+    - [Quantitative Inputs - WIP](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome/Quantitative%20Inputs)
 
