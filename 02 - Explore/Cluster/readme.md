@@ -4,3 +4,5 @@ Cluster Analysis can be helpful when you have quantitative columns and you want 
 - Standartization: MinMax and StandardScaler
 - Finding optimal k: Running k-means with limitations on n_init and max_iter. PCA analysis to better understand rank of the matrix.
 - Understanding results: PCA 2-D plot, Pie chart, violin plots.
+
+Because of the analytics nature of this topic, I will also provide a notebook.
