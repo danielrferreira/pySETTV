@@ -12,7 +12,7 @@
   - [Quantitative Outcome vs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome):
     - [Categorical Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome/Categorical%20Inputs)
     - [Quantitative Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome/Quantitative%20Inputs) 
-* [Cluster Analysis - WIP](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Cluster)
+* [Cluster Analysis](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Cluster)
 * Dimension Reduction:
   - Principal Components
   - Feature Ranking
