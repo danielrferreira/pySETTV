@@ -14,5 +14,5 @@
     - [Quantitative Inputs](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Bivariate/Quantitative%20Outcome/Quantitative%20Inputs) 
 * [Cluster Analysis](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Cluster)
 * [Dimension Reduction]():
-  - [Feature Ranking & Selection - WIP]()
+  - [Feature Ranking & Selection - WIP](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Dimension%20Reduction/Feature%20Ranking)
   - [Principal Components - WIP](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Dimension%20Reduction/PCA)
