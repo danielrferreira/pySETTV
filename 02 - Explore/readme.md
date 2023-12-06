@@ -15,4 +15,4 @@
 * [Cluster Analysis](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Cluster)
 * [Dimension Reduction]():
   - Feature Ranking & Selection
-  - [Principal Components]()
+  - [Principal Components - WIP]()
