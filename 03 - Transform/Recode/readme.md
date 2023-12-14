@@ -5,4 +5,4 @@ Many times our variables/features/columns need recoding. Let's cover some of the
   - Label Encoding: Simple Mapping of values (A -> 1, B -> 2).
 * Categorical columns have huge cardinality (too many categories) and grouping them can be beneficial to avoid curse of dimensionality.
 * Numerical input features have complex relantionships with outcome and categorizing them before one-hot encoding can simplify things.
-* Windowing: Imputation of outliers.
+* Windowing: Imputation and deletion of outliers.
