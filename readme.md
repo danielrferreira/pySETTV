@@ -24,7 +24,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 * [Dimension Reduction]():
   - [Feature Ranking](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Dimension%20Reduction/Feature%20Ranking)
   - [Principal Components](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Dimension%20Reduction/PCA)
-## 03 - Transform
+## [03 - Transform](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform)
 - [Merge and Append Tables](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Merge%20and%20Append)
 - [Aggregate functions](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Aggregate)
 - [Variable Recoding](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Recode)
