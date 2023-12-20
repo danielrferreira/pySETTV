@@ -29,7 +29,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - [Aggregate functions](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Aggregate)
 - [Variable Recoding](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Recode)
 - [Standardization](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Standardization)
-- Variable Math transformation
+- [Variable Math transformation - WIP]()
 - Missing handling
 - [String cleaning for text categorization](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/String%20Cleaning)
 ## 04 - Train Models
