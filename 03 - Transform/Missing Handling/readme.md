@@ -8,4 +8,4 @@ This code will go through some of the most common methods to identify and input 
   - Missing Label
   - Mean, Median, Mode
   - Distribution Based
-  - Model Based
+  - Model Based (Just a very simple Linear Regression, for tree-based imputation, check the decision tree section)
