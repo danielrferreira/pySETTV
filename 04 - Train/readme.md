@@ -1,5 +1,5 @@
 # Train Model
-- Linear Regression
+- [Linear Regression - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Linear%20Regression)
 - Generalized Linear Models
 - Logistic Regression
 - Decision Trees
