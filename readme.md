@@ -33,7 +33,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - [Missing Handling](https://github.com/danielrferreira/pySETTV/tree/main/03%20-%20Transform/Missing%20Handling)
 - [String Cleaning for Text Categorization](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Transform/String%20Cleaning)
 ## [04 - Train Models](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train)
-- [Linear Regression - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Linear%20Regression)
+- [Linear Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Linear%20Regression)
 - Generalized Linear Models
 - Logistic Regression
 - Decision Trees
