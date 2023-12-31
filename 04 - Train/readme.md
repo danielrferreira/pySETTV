@@ -1,6 +1,6 @@
 # Train Model
 - [Linear Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Linear%20Regression)
-- Generalized Linear Models
+- [Generalized Linear Models - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Generalized%20Linear%20Regression)
 - Logistic Regression
 - Decision Trees
 - Random Forest
