@@ -1,1 +1,6 @@
-# Decision Tree
+# Decision Tree (Classification)
+Decision Trees offer a straightforward and visual method to grasp relationships within a table. The algorithm achieves this by repeatedly dividing the table based on input variables, constantly searching for splits that reveal distinct distributions of the outcome variable. In this code snippet, we'll leverage the sklearn implementation of classification trees. We'll walk through the process of fitting a straightforward decision tree, visualize the results, and delve into the key parameters to control the complexity of the model:
+- Limiting Tree Depth (max_depth): Set the maximum depth of the tree. A shallower tree is less likely to overfit.
+- Minimum Samples for a Split (min_samples_split): Specify the minimum number of samples required to split an internal node. Increasing this parameter can prevent the model from creating splits that capture noise.
+- Minimum Samples in a Leaf Node (min_samples_leaf): Define the minimum number of samples required to be in a leaf node. This helps control the size of the leaves and can prevent overfitting.
+- Maximum Features (max_features): Limit the number of features considered for a split. This can be particularly useful when dealing with a large number of features.
