@@ -38,7 +38,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - [Logistic Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Logistic%20Regression)
 - [Decision Trees](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Decision%20Tree)
 - [Random Forest](https://github.com/danielrferreira/pySETTV/blob/main/04%20-%20Train/Random%20Forest/readme.md)
-- Gradient Boosting
+- [Gradient Boosting - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Gradient%20Boosting)
 - Neural Networks
 - Support Vector Machine
 - Gaussian Naive Bayes
