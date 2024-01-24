@@ -1,5 +1,5 @@
-# pySETTV (WIP)
-Codes to Sample, Explore, Transform, Train Models and Validate Models.
+# [pySETTV (WIP)](https://github.com/danielrferreira/pySETTV/tree/main)
+[Codes to Sample, Explore, Transform, Train Models and Validate Models.](https://github.com/danielrferreira/pySETTV/tree/main)
 
 ## [01 - Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample)
 - [Filter](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Filter)
@@ -38,7 +38,8 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - [Logistic Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Logistic%20Regression)
 - [Decision Trees](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Decision%20Tree)
 - [Random Forest](https://github.com/danielrferreira/pySETTV/blob/main/04%20-%20Train/Random%20Forest/readme.md)
-- [Gradient Boosting - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Gradient%20Boosting)
+- [Gradient Boosting For Classification - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Gradient%20Boosting%20Classifier)
+- Gradient Boosting For Quantification
 - Neural Networks
 - Support Vector Machine
 - Gaussian Naive Bayes
@@ -51,7 +52,7 @@ Codes to Sample, Explore, Transform, Train Models and Validate Models.
 - Graphical Model Validation for Binary Outcome
 - Graphical Model Validation for Quantitative Outcome
 - Model Comparison
-## 06 - Utility & References
+## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
 * [File Import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import):
   - [Simple csv import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Simple%20CSV%20Import)
   - [Function that allow multiple data formats](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Multiple%20Formats)
