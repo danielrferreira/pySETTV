@@ -4,7 +4,7 @@
 - [Logistic Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Logistic%20Regression)
 - [Decision Trees](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Decision%20Tree)
 - [Random Forest](https://github.com/danielrferreira/pySETTV/blob/main/04%20-%20Train/Random%20Forest/readme.md)
-- [Boosting For Classification]()
+- [Boosting For Classification](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Boosting%20Classifiers)
 - Gradient Boosting For Quantification
 - Neural Networks
 - Support Vector Machine
