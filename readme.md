@@ -41,7 +41,7 @@
 - [Boosting For Classification](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Boosting%20Classifiers)
 - Gradient Boosting For Quantification
 - Neural Networks
-- Support Vector Machine
+- [Support Vector Machine - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVC)
 - Gaussian Naive Bayes
 - Multinominal Naive Bayes
 - K-Nearest Neighbors
