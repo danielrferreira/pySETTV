@@ -10,4 +10,4 @@
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
 - Gaussian Naive Bayes
 - Multinominal Naive Bayes
-- K-Nearest Neighbors
+- [K-Nearest Neighbors - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
