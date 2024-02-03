@@ -43,7 +43,7 @@
 - Neural Networks
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
 - Gaussian Naive Bayes
-- Multinominal Naive Bayes
+- [Multinominal Naive Bayes - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Multinominal%20Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
 ## 05 - Validate Models
 - Fit Statistics for Quantitative Outcome
