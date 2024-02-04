@@ -45,11 +45,9 @@
 - [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
 ## 05 - Validate Models
-- Fit Statistics for Quantitative Outcome
-- Fit Statistics for Binary Outcome
+- Fit Statistics & Graphs for Quantitative Outcome
+- Fit Statistics & Graphs for Categorical Outcome
 - Linear Regressions Assumptions Check
-- Graphical Model Validation for Binary Outcome
-- Graphical Model Validation for Quantitative Outcome
 - Model Comparison
 ## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
 * [File Import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import):
