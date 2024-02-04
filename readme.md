@@ -46,7 +46,7 @@
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
 ## [05 - Validate Models](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate)
 - Fit Statistics & Graphs for Quantitative Outcome
-- [Fit Statistics & Graphs for Categorical Outcome - WIP]()
+- [Fit Statistics & Graphs for Categorical Outcome - WIP](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Classification)
 - Linear Regressions Assumptions Check
 - Model Comparison
 ## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
