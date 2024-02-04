@@ -8,6 +8,5 @@
 - Gradient Boosting For Quantification
 - Neural Networks
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
-- Gaussian Naive Bayes
-- [Multinominal Naive Bayes - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Multinominal%20Naive%20Bayes)
+- [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)

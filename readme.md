@@ -42,15 +42,12 @@
 - Gradient Boosting For Quantification
 - Neural Networks
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
-- Gaussian Naive Bayes
-- [Multinominal Naive Bayes - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Multinominal%20Naive%20Bayes)
+- [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
 ## 05 - Validate Models
-- Fit Statistics for Quantitative Outcome
-- Fit Statistics for Binary Outcome
+- Fit Statistics & Graphs for Quantitative Outcome
+- Fit Statistics & Graphs for Categorical Outcome
 - Linear Regressions Assumptions Check
-- Graphical Model Validation for Binary Outcome
-- Graphical Model Validation for Quantitative Outcome
 - Model Comparison
 ## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
 * [File Import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import):
