@@ -44,9 +44,9 @@
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
 - [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
-## 05 - Validate Models
+## [05 - Validate Models](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate)
 - Fit Statistics & Graphs for Quantitative Outcome
-- Fit Statistics & Graphs for Categorical Outcome
+- [Fit Statistics & Graphs for Categorical Outcome - WIP]()
 - Linear Regressions Assumptions Check
 - Model Comparison
 ## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
