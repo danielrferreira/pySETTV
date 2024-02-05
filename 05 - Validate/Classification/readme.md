@@ -1,6 +1,6 @@
 # Classification Models Assessment
-After running a model, the next natural question is around model performance. How good is your model? The answer to this questions will depend on the final purpouse of your model:
-- Purely Classification: For this case, metrics like accuracy, recall and precision can help understand model quality.
-- Probability Estimation: Sometimes the output of your model will be used as an input in another calculation. Average Squared Error can be more sensitive when you are trying to get as closer to 1 and 0.
-- Ranking: For models that will be used to rank cases, KS and AUC can be used.
+Once a model has been executed, the immediate concern revolves around its performance. The pivotal question emerges: How effective is your model? The response to this query is contingent upon the ultimate purpose of your model:
+- **Pure Classification:** In scenarios where the primary objective is accurate make guesses, metrics such as accuracy, misclassification rate, recall, precision, and F1 Score serve as crucial indicators to comprehend the overall quality of the model.
+- **Probability Estimation:** When the model's output serves as an input for subsequent calculations, Average Squared Error proves to be more discerning, especially when striving for proximity to ideal values of 1 and 0.
+- **Ranking:** For models tasked with ranking cases, Kolmogorov-Smirnov Statistic (KS) and Area Under the Curve (AUC) become invaluable measures to assess the model's ability to discriminate between different classes by comparing the cumulative distributions of the positive and negative cases (After Ranking based on your prediction).
  
