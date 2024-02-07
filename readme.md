@@ -49,6 +49,7 @@
 - [Fit Statistics & Graphs for Categorical Outcome - WIP](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Classification)
 - Linear Regressions Assumptions Check
 - Model Comparison
+- Cross-Validation
 ## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
 * [File Import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import):
   - [Simple csv import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Simple%20CSV%20Import)
