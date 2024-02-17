@@ -37,7 +37,7 @@
 - [Generalized Linear Models](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Generalized%20Linear%20Regression)
 - [Logistic Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Logistic%20Regression)
 - [Decision Trees](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Decision%20Tree)
-- [Regression Trees - WIP]()
+- [Regression Trees](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Regression%20Tree)
 - [Random Forest](https://github.com/danielrferreira/pySETTV/blob/main/04%20-%20Train/Random%20Forest/readme.md)
 - [Boosting For Classification](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Boosting%20Classifiers)
 - Gradient Boosting For Quantification
@@ -47,7 +47,7 @@
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
 ## [05 - Validate Models](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate)
 - Fit Statistics & Graphs for Quantitative Outcome
-- [Fit Statistics & Graphs for Categorical Outcome - WIP](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Classification)
+- [Fit Statistics & Graphs for Categorical Outcome](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Classification)
 - Linear Regressions Assumptions Check
 - Model Comparison
 - Cross-Validation
