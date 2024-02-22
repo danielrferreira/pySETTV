@@ -1,9 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Feb 22 18:22:17 2024
+
+@author: danielferreira
+"""
+
 # Pre-Process
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import explained_variance_score
-bat = pd.read_csv('player_batting_enriched.csv', index_col='player_id')
+import os
+folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+file = 'player_batting_enriched.csv'
+index = 'player_id'
+os.chdir(folder)
+bat = pd.read_csv(file, index_col=index)
 outcome = bat[bat['year']==2023]['batting_avg']
 bat_22 = bat[bat['year']==2022].copy()
 bat_22['y_2023_avg'] = outcome
@@ -18,9 +30,38 @@ X = bat_22[inputs]
 y = bat_22['y_2023_avg']
 
 #%%
-# The default ...
-from sklearn.ensemble import GradientBoostingRegressor
+# Default Gradient Boosting
 model1 = GradientBoostingRegressor()
 model1.fit(X,y)
 pred = model1.predict(X)
 print(explained_variance_score(y,pred))
+
+#%%
+# The default is trees with 3 floors, so you can make it even simpler with stumps (max_depth=2)
+model2 = GradientBoostingRegressor(max_depth=2)
+model2.fit(X,y)
+pred = model2.predict(X)
+print(explained_variance_score(y,pred))
+
+#%%
+# The default for number of threes is 100, you can increase with n_estimators
+model3 = GradientBoostingRegressor(max_depth=2,n_estimators=400)
+model3.fit(X,y)
+pred = model3.predict(X)
+print(explained_variance_score(y,pred)) # This metric should not be maximized, it will lead to overfit.
+
+#%%
+# If you want to understand what happens in each step
+model4 = GradientBoostingRegressor(max_depth=2, n_estimators=400, verbose=1)
+model4.fit(X,y)
+pred = model4.predict(X)
+print(explained_variance_score(y,pred))
+
+#%%
+# Some more options from:
+# https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html
+# loss{‘squared_error’, ‘absolute_error’, ‘huber’, ‘quantile’}, default=’squared_error’
+# learning_rate float, default=0.1
+# criterion{‘friedman_mse’, ‘squared_error’}, default=’friedman_mse’
+# min_samples_split, min_samples_leaf
+# validation_fraction float, default=0.1
