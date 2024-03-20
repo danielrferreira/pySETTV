@@ -5,7 +5,7 @@ Created on Mon Sep  4 22:26:12 2023
 
 @author: danielferreira
 """
-
+# Dylan is awesome
 #%%
 # This function splits the data into Train/Validation/Test. This code used pandas sample method. You can find another alternative using numpy in the same folder, but the conversion to numpy I did ended up being too expensive. For more information see the notebook with %timeit across the two methods.
 def data_partition(data, train_ratio=0.5, val_ratio=0.5, test_ratio=0, seed=420):
