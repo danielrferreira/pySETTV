@@ -41,7 +41,7 @@
 - [Random Forest](https://github.com/danielrferreira/pySETTV/blob/main/04%20-%20Train/Random%20Forest/readme.md)
 - [Boosting For Classification](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Boosting%20Classifiers)
 - [Gradient Boosting For Quantification](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Gradient%20Boosting)
-- [Neural Networks - WIP](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Neural%20Networks)
+- [Neural Networks](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Neural%20Networks)
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
 - [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
