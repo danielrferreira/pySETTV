@@ -1,4 +1,6 @@
 
+from sklearn.metrics import confusion_matrix
+
 class model_comparison:
     def __init__(self, outcome, name_outcome):
         """
@@ -8,12 +10,11 @@ class model_comparison:
             outcome: actual outcomes, usually from test datasets
             name_outcome: What we are trying to predict
         """
-        self.data = data
         self.outcome = outcome
         self.name_outcome = name_outcome
 
-    def stats_v1(y, pred):
-        cm = confusion_matrix(y, pred)
+    def stats_v1(self, pred):
+        cm = confusion_matrix(self.outcome, pred)
         acc = (cm[0,0]+cm[1,1])/cm.sum()
         miss = 1-acc
         TP = cm[1,1] 
