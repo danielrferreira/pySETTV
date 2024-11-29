@@ -1,2 +1,2 @@
 # Artifficial Neural Networks
-ANN is a huge part of ML and, since it first architetures, it evolved to deep learning algorithms that power most of our day to day AI systems. This code will focus on classic architettures, such as Multi-layer Perceptron. This is a very basic Neural Network model, please look for sklearn.neural_network documentation for detailed explanations.
+ANN is a huge part of ML and, since it first architetures, it evolved to deep learning algorithms that power most of our day to day AI systems. This code will focus on Multi-layer Perceptron and just a few parameters. This is a very basic Neural Network model, please look for sklearn.neural_network documentation for other cases.
