@@ -27,4 +27,4 @@ class model_comparison:
         recall_0 = TN / (TN+FP)
         metrics = [acc,miss,precision_1,precision_0,recall_1,recall_0]
         for i, metric_name in zip(metrics, ['Accuracy', 'Miss Rate', 'Precision (Class 1)', 'Precision (Class 0)', 'Recall (Class 1)', 'Recall (Class 0)']):
-            print(f'{metric_name}: {round(i,3)}')
+            print(f'{self.name_outcome} - {metric_name}: {round(i,3)}')
