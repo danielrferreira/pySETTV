@@ -1,2 +1,2 @@
-# Model Comparison
+# Model Comparison - WIP
 This code will provide a function to compare fit statistics and fit graphs from multiple models. I will focus on categorical outcomes but the code can be adapted to quantitative dependent variables.
