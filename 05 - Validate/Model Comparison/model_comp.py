@@ -3,10 +3,10 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc, mean_squared_error
 import pandas as pd
 import matplotlib.pyplot as plt
 
-class model_comparison:
-    def __init__(self, outcome, name_outcome, class_predicted=True, the_other_class=False):
+class model_fit:
+    def __init__(self, outcome, name_outcome, class_predicted, the_other_class, dataset_type, model_name, y_data, y_pred, y_prob_1):
         """
-        Initialize the Model Comparison
+        A class to store all 
 
         Args:
             outcome: actual outcomes pandas series of booleans, usually from test datasets
