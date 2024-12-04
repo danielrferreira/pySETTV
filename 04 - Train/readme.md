@@ -1,4 +1,8 @@
 # Train Model
+This section covers some of the most common modeling techniques. I didn’t delve deeply into neural networks, as they are not my primary area of expertise. Additionally, this repository does not address time series analysis.
+
+I’ve included a feature-ranking application in the Random Forest code, which I found particularly useful for exploratory analysis.
+
 - [Linear Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Linear%20Regression)
 - [Generalized Linear Models](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Generalized%20Linear%20Regression)
 - [Logistic Regression](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Logistic%20Regression)

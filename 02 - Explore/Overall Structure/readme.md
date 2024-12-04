@@ -6,3 +6,5 @@ The first step in an analysis (after gathering the data), is to look at the data
 - How many rows and columns?
 - What are the name of the columns?
 - How the first rows look like?
+
+This code provide very basic exploration of text files and pandas DataFrames.

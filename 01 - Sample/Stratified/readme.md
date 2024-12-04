@@ -4,7 +4,7 @@ This code can be used to draw stratified samples, so the randomization happens w
 
 This code can also be used to balance samples, because some modelling techniques are sensitive to unbalenced data. K-NN and Decision Trees combined with a sample that only has 1% of cases as positives, will probally lead to models that predicts almost all cases as negatives. Balancing the sample can improve the model. If you balance the sample, you need to think about the bias of the probabilities estimated.
 
-I also included a code to split the data in train and test while taking a categorical variable as strata variable (for cases you want to avoid that only one of ths splits has extreme values).
+I also included a code to split the data in train and test while taking a categorical variable as strata variable (for cases you want to avoid that only one of the splits has extreme values).
 
 
 
