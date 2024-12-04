@@ -1,4 +1,5 @@
 # Utility & References
+This section covers general Python concepts and was the first one I created. I primarily use it as a personal reference. You can ignore it.
 * [File Import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import):
   - [Simple csv import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Simple%20CSV%20Import)
   - [Function that allow multiple data formats](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import/Multiple%20Formats)

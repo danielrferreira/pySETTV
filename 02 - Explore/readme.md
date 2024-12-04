@@ -1,4 +1,8 @@
 # Explore
+The Explore phase shouldn’t be considered a single step, as this framework is best suited for scenarios where you continuously explore the results of your transformations and models. This phase is where I spent the most time and identified the greatest need for custom functions.
+
+Many of the multi-plotting methods I used could benefit from refinement. For a more robust approach, check out this class, which features an improved coding structure and automatically removes unused subplots.
+
 * [Table Overall Structure](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Overall%20Structure)
 * [Univariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate):
   - [Missing Report](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Missing)

@@ -1,5 +1,18 @@
 # [pySETTV (WIP)](https://github.com/danielrferreira/pySETTV/tree/main)
-[Codes to Sample, Explore, Transform, Train Models and Validate Models.](https://github.com/danielrferreira/pySETTV/tree/main)
+Codes to Sample, Explore, Transform, Train Models and Validate Models. 
+
+This repository is a collection of code snippets I created while studying Python and translating methods I previously used with SAS and R. It also reflects some of my professional experience working with these techniques.
+
+Please note that this is not a Python package but rather a supplementary resource to the official documentation for libraries like scikit-learn, pandas, and NumPy. Each section typically includes a README file and a Python script with examples. In some cases, I've also added a Jupyter Notebook to demonstrate the functions and methods in action.
+
+The README files usually explain the underlying technique, its practical applications, and guidance on when and how to tweak parameters for better results.
+
+This resource is not focused on deep learning. Instead, it is better suited for scenarios where staying in touch with the data, exploring it, interpreting relationships, and building statistical models is the priority. It follows a structured framework:
+
+- Sample: Access the data.
+- Explore and Transform: Iterate within this loop to understand and prepare the data.
+- Train: Build models.
+- Validate: Assess and refine results.
 
 ## [01 - Sample](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample)
 - [Filter](https://github.com/danielrferreira/pySETTV/tree/main/01%20-%20Sample/Filter)
