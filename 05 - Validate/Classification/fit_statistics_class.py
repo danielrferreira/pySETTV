@@ -250,3 +250,36 @@ def roc_plot(model,X_data,y_data):
 #%%
 # Calling the function
 accuracy_report(model1)
+
+#%% Function for all stats
+def all_stats(y_pred, y_prob, y_data, class_predicted, the_other_class):
+    """
+    Gets all stats from 1 model and one dataset
+
+    Args:
+        y_pred: categorical prediction from model
+        y_prob: probability of outcome to happen from model
+        y_data: categorical actual values 
+        class_predicted: The class you want to predict
+        the_other_class: The other class
+    """
+    y_data = pd.Series(y_data).map({the_other_class:0,class_predicted:1})
+    y_pred = pd.Series(y_pred).map({the_other_class:0,class_predicted:1})
+    fpr, tpr, thresholds = roc_curve(y_data, y_prob[:,1])
+    roc_auc = auc(fpr, tpr)
+    cm = confusion_matrix(y_data, y_pred)
+    acc = (cm[0,0]+cm[1,1])/cm.sum()
+    miss = 1-acc
+    TP = cm[1,1] 
+    FP = cm[0,1]
+    TN = cm[0,0]
+    FN = cm[1,0]
+    precision_1 = TP / (TP+FP)
+    precision_0 = TN / (TN+FN)
+    recall_1 = TP / (TP+FN)
+    recall_0 = TN / (TN+FP)
+    f1_1 = 2 * (precision_1 * recall_1) / (precision_1 + recall_1)
+    f1_0 = 2 * (precision_0 * recall_0) / (precision_0 + recall_0)
+    ase = mean_squared_error(y_data, y_prob[:,1])
+    log_loss_value = log_loss(y_data, y_prob[:,1])
+    return [roc_auc, acc, miss, precision_1, precision_0, recall_1, recall_0, f1_1, f1_0, ase, log_loss_value]
