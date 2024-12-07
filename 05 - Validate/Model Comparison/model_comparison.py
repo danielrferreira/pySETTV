@@ -4,18 +4,26 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 class problem:
-    def __init__(self, name_outcome, class_predicted=True, the_other_class=False):
+    def __init__(self, name_outcome, model_dict, y_actual, class_predicted=True, the_other_class=False, ds_list=['Train', 'Test']):
         """
         A class to define the problem
 
         Args:
             name_outcome: What we are trying to predict
+            model_dict: Dictionary with model names, predictions and probabilities  for different data sets (e.g {'Logistic Regression 1': [[y_pred_train_1, y_prob_train_1], [y_pred_test_1, y_prob_test_1]], 'KNN':[[y_pred_train_2, y_prob_train_2], [y_pred_test_2, y_prob_test_2]]})
+            y_actual: list with series for each data ser, order should be the same as ds_list
             class_predicted: The class you are trying to predict (e.g. True, 1 or any class name you are targeting)
             the_other_class: The other class (e.g. False, 0)
+            ds_list: dataset where the fit statistics are calulated (e.g. ['Train', 'Test'])
         """
         self.name_outcome = name_outcome
+        self.model_dict = model_dict
+        self.y_actual = y_actual
         self.class_predicted = class_predicted
         self.the_other_class = the_other_class
+        self.ds_list = ds_list
+        self.model_list = list(model_dict.keys())
+        self.predictions = model_dict.values()
     def stats_1_model_ds(self, y_actual, y_pred, y_prob_1, model_name, ds):
         """
         Creates stats for a specific model and dataset combination
@@ -52,20 +60,16 @@ class problem:
                 'recall_1':recall_1, 'recall_0':recall_0, 
                 'f1_1':f1_1, 'f1_0':f1_0,
                 'roc_auc':roc_auc, 'ase':ase, 'log_loss_value':log_loss_value}
-    def stats_1_model(self, y_actual, y_pred, y_prob_1, model_name, ds_list=['Train', 'Test']):
-        """
-        Iterates 1 model accross all datasets
-
-        Args:
-            y_actual: list with different series or ndarrays with actual outcomes
-            y_pred: list with different series or ndarrays with predictions from model
-            y_prob_1: list with different series or ndarrays with probabilities of positive cases
-            model_name: Name to appear in the graphs and tables
-            ds_list: dataset where the fit statistics are calulated (e.g. ['Train', 'Test'])
-        """
+    
+    def stat_table(self):
         results = pd.DataFrame()
-        for y, y_pred, y_prob, ds in zip(y_actual, y_pred, y_prob_1, ds_list):
-            stats = self.stats_1_model_ds(y, y_pred, y_prob, model_name, ds)
-            results = pd.concat([results, pd.DataFrame([stats])], ignore_index=True)
-        return results
+        for i, m in enumerate(self.model_list):
+            for j, ds in enumerate(self.ds_list):
+                stats = self.stats_1_model_ds(self.y_actual[j], y_pred, y_prob, model_name, ds)
 
+
+        #     results = pd.DataFrame()
+        # for y, y_pred, y_prob, ds in zip(y_actual, y_pred, y_prob_1, ds_list):
+        #     stats = self.stats_1_model_ds(y, y_pred, y_prob, model_name, ds)
+        #     results = pd.concat([results, pd.DataFrame([stats])], ignore_index=True)
+        # # return results
