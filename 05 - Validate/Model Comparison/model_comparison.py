@@ -62,14 +62,12 @@ class problem:
                 'roc_auc':roc_auc, 'ase':ase, 'log_loss_value':log_loss_value}
     
     def stat_table(self):
+        """
+        This will create a table with all models and datasets combination and all fit statistics
+        """
         results = pd.DataFrame()
-        for i, m in enumerate(self.model_list):
+        for m in self.model_list:
             for j, ds in enumerate(self.ds_list):
-                stats = self.stats_1_model_ds(self.y_actual[j], y_pred, y_prob, model_name, ds)
-
-
-        #     results = pd.DataFrame()
-        # for y, y_pred, y_prob, ds in zip(y_actual, y_pred, y_prob_1, ds_list):
-        #     stats = self.stats_1_model_ds(y, y_pred, y_prob, model_name, ds)
-        #     results = pd.concat([results, pd.DataFrame([stats])], ignore_index=True)
-        # # return results
+                stats = self.stats_1_model_ds(self.y_actual[j], self.model_dict[m][0][j], self.model_dict[m][1][j], m, ds)
+                results = pd.concat([results, pd.DataFrame([stats])], ignore_index=True)
+        return results
