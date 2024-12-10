@@ -23,11 +23,12 @@ class problem:
         self.the_other_class = the_other_class
         self.ds_list = ds_list
         self.model_list = list(model_dict.keys())
-        self.predictions = model_dict.values()
+        self.predictions = list(model_dict.values())
         self.higher_better_columns = ['acc', 'precision_1', 'precision_0', 'recall_1', 'recall_0','f1_1','f1_0', 'roc_auc']
         self.lower_better_columns = ['miss', 'ase','log_loss_value']
         self.high_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.higher_better_columns]
         self.low_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.lower_better_columns]
+    
     def stats_1_model_ds(self, y_actual, y_pred, y_prob_1, model_name, ds):
         """
         Creates stats for a specific model and dataset combination
