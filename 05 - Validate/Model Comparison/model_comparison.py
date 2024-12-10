@@ -24,6 +24,10 @@ class problem:
         self.ds_list = ds_list
         self.model_list = list(model_dict.keys())
         self.predictions = model_dict.values()
+        self.higher_better_columns = ['acc', 'precision_1', 'precision_0', 'recall_1', 'recall_0','f1_1','f1_0', 'roc_auc']
+        self.lower_better_columns = ['miss', 'ase','log_loss_value']
+        self.high_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.higher_better_columns]
+        self.low_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.lower_better_columns]
     def stats_1_model_ds(self, y_actual, y_pred, y_prob_1, model_name, ds):
         """
         Creates stats for a specific model and dataset combination
@@ -71,3 +75,27 @@ class problem:
                 stats = self.stats_1_model_ds(self.y_actual[j], self.model_dict[m][0][j], self.model_dict[m][1][j], m, ds)
                 results = pd.concat([results, pd.DataFrame([stats])], ignore_index=True)
         return results
+    
+    def stat_table_transposed(self):
+        df = self.stat_table().sort_values('ds')
+        pivoted_df = df.pivot(index='model_name', columns='ds')
+        pivoted_df.columns = [f"{col[1]}_{col[0]}" for col in pivoted_df.columns]
+        pivoted_df = pivoted_df.reset_index()
+        cols = ['model_name'] + sorted([col for col in pivoted_df.columns if col != 'model_name'])
+        pivoted_df = pivoted_df[cols]
+        return pivoted_df
+    
+    def highlight_best(self, s):
+        is_higher_better = s.name in self.high_col_ds
+        is_lower_better = s.name in self.low_col_ds
+        if is_higher_better:
+            best_value = s.max()
+        elif is_lower_better:
+            best_value = s.min()
+        else:
+            return [''] * len(s)
+        return ['color: red; font-weight: bold;' if v == best_value else '' for v in s]
+    
+    def show_table(self):
+        df = self.stat_table_transposed()
+        return df.style.apply(self.highlight_best, axis=0)
