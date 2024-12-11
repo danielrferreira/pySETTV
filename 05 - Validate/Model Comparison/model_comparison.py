@@ -23,11 +23,12 @@ class problem:
         self.the_other_class = the_other_class
         self.ds_list = ds_list
         self.model_list = list(model_dict.keys())
-        self.predictions = model_dict.values()
+        self.predictions = list(model_dict.values())
         self.higher_better_columns = ['acc', 'precision_1', 'precision_0', 'recall_1', 'recall_0','f1_1','f1_0', 'roc_auc']
         self.lower_better_columns = ['miss', 'ase','log_loss_value']
         self.high_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.higher_better_columns]
         self.low_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.lower_better_columns]
+    
     def stats_1_model_ds(self, y_actual, y_pred, y_prob_1, model_name, ds):
         """
         Creates stats for a specific model and dataset combination
@@ -77,7 +78,7 @@ class problem:
         return results
     
     def stat_table_transposed(self):
-        df = self.stat_table().sort_values('ds')
+        df = self.stat_table()
         pivoted_df = df.pivot(index='model_name', columns='ds')
         pivoted_df.columns = [f"{col[1]}_{col[0]}" for col in pivoted_df.columns]
         pivoted_df = pivoted_df.reset_index()
@@ -96,6 +97,17 @@ class problem:
             return [''] * len(s)
         return ['color: red; font-weight: bold;' if v == best_value else '' for v in s]
     
-    def show_table(self):
+    def show_fit_statistics_table(self):
         df = self.stat_table_transposed()
         return df.style.apply(self.highlight_best, axis=0)
+    
+    def plot_graphs_higher(self):
+        df = self.stat_table_transposed()[['model_name'] + self.high_col_ds]
+        for g in self.high_col_ds:
+            plt.figure(figsize=(8, 5))
+            plt.bar(df['model_name'], df[g], width=0.6)
+            plt.xlabel('Model Name')
+            plt.ylabel(g)
+            plt.xticks(rotation=45)
+            plt.tight_layout()
+            plt.show()
