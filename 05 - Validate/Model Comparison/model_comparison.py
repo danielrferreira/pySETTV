@@ -78,7 +78,7 @@ class problem:
         return results
     
     def stat_table_transposed(self):
-        df = self.stat_table().sort_values('ds')
+        df = self.stat_table()
         pivoted_df = df.pivot(index='model_name', columns='ds')
         pivoted_df.columns = [f"{col[1]}_{col[0]}" for col in pivoted_df.columns]
         pivoted_df = pivoted_df.reset_index()
@@ -97,6 +97,17 @@ class problem:
             return [''] * len(s)
         return ['color: red; font-weight: bold;' if v == best_value else '' for v in s]
     
-    def show_table(self):
+    def show_fit_statistics_table(self):
         df = self.stat_table_transposed()
         return df.style.apply(self.highlight_best, axis=0)
+    
+    def plot_graphs_higher(self):
+        df = self.stat_table_transposed()[['model_name'] + self.high_col_ds]
+        for g in self.high_col_ds:
+            plt.figure(figsize=(8, 5))
+            plt.bar(df['model_name'], df[g], width=0.6)
+            plt.xlabel('Model Name')
+            plt.ylabel(g)
+            plt.xticks(rotation=45)
+            plt.tight_layout()
+            plt.show()
