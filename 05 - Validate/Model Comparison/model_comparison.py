@@ -14,7 +14,7 @@ class problem:
         Args:
             name_outcome: What we are trying to predict
             model_dict: Dictionary with model names, predictions and probabilities  for different data sets (e.g {'Logistic Regression 1': [[y_pred_train_1, y_prob_train_1], [y_pred_test_1, y_prob_test_1]], 'KNN':[[y_pred_train_2, y_prob_train_2], [y_pred_test_2, y_prob_test_2]]})
-            y_actual: list with series for each data ser, order should be the same as ds_list
+            y_actual: list with series for each data set, order should be the same as ds_list
             class_predicted: The class you are trying to predict (e.g. True, 1 or any class name you are targeting)
             the_other_class: The other class (e.g. False, 0)
             ds_list: dataset where the fit statistics are calulated (e.g. ['Train', 'Test'])
@@ -29,6 +29,8 @@ class problem:
         self.predictions = list(model_dict.values())
         self.higher_better_columns = ['acc', 'precision_1', 'precision_0', 'recall_1', 'recall_0','f1_1','f1_0', 'roc_auc']
         self.lower_better_columns = ['miss', 'ase','log_loss_value']
+        self.fit_stat_map = {'acc': 'Accuracy', 'precision_1': 'Precision: 1', 'precision_0': 'Precision: 0', 'recall_1': 'Recall 1', 'recall_0': 'Recall 0','f1_1': 'F1: 1','f1_0': 'F1: 0', 
+                             'roc_auc': 'Area Under ROC', 'miss': 'Missclassification', 'ase': 'Average Squared Error','log_loss_value': 'Log Loss'}
         self.high_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.higher_better_columns]
         self.low_col_ds = [f"{ds}_{column}" for ds in ds_list for column in self.lower_better_columns]
     
@@ -81,6 +83,9 @@ class problem:
         return results
     
     def stat_table_transposed(self):
+        """"
+        Transposing the table to have a better visualization and highlight best models
+        """
         df = self.stat_table()
         pivoted_df = df.pivot(index='model_name', columns='ds')
         pivoted_df.columns = [f"{col[1]}_{col[0]}" for col in pivoted_df.columns]
@@ -90,6 +95,9 @@ class problem:
         return pivoted_df
     
     def highlight_best(self, s):
+        """
+        If value is min or max, highlight the value in bold red. 
+        """
         is_higher_better = s.name in self.high_col_ds
         is_lower_better = s.name in self.low_col_ds
         if is_higher_better:
@@ -101,13 +109,23 @@ class problem:
         return ['color: red; font-weight: bold;' if v == best_value else '' for v in s]
     
     def show_fit_statistics_table(self):
+        """"
+        Show table with formatted values
+        """
         df = self.stat_table_transposed()
         return df.style.apply(self.highlight_best, axis=0)
     
     def show_fit_statistics_graphs(self, ds):
-        all_metrics_ds = self.high_col_ds + self.low_col_ds
-        metrics = [col for col in all_metrics_ds if col.startswith(ds)]
-        df = self.stat_table_transposed()[['model_name'] + metrics]
+        """"
+        This function will show all models for each fit statistic
+
+        Args:
+            ds: Dataset you need to use
+        """
+        metrics = self.higher_better_columns + self.lower_better_columns
+        df = self.stat_table()
+        df = df[df['ds']==ds]
+        df.drop('ds', axis=1)
         n_row = math.ceil(len(metrics) / 3)
         fig, axes = plt.subplots(nrows=n_row, ncols=3, figsize=(10, 10)) 
         axes=axes.flatten()
@@ -115,11 +133,20 @@ class problem:
         hue_order = df['model_name'].unique()
         color_map = {model: color for model, color in zip(hue_order, palette)}
         for m, ax in zip(metrics, axes):
+            min_value = df[m].min()  
+            lower_padding = (df[m].max() - min_value) * 0.15 if min_value != 0 else 0
+            higher_padding = (df[m].max() - min_value) * 0.15
             sns.barplot(x='model_name', y=m, data=df, ax=ax, hue='model_name', dodge=False, palette=color_map)
-            ax.set_title(m)
+            ax.set_title(self.fit_stat_map[m])
             ax.set_xticks([])
             ax.set_xlabel('') 
             ax.set_ylabel('')
+            ax.set_ylim(min_value - lower_padding, df[m].max() + higher_padding)
+            for container in ax.containers:  
+                for bar in container:
+                    height = bar.get_height() 
+                    x = bar.get_x() + bar.get_width() / 2
+                    ax.text(x, height + higher_padding * 0.2, f'{height:.3f}',  ha='center', va='bottom', fontsize=10 )
         for ax in axes[len(metrics):]:
             ax.set_visible(False)
         legend_handles = [Patch(color=color, label=model) for model, color in color_map.items()]
@@ -128,16 +155,25 @@ class problem:
         plt.tight_layout(rect=[0, 0, 1, 0.98])
         plt.show()
 
-    def roc_plot(self,y_prob, y_data):
+    def roc_data_model_ds(self,model,ds):
         """
         Creates ROC Curve
         Args:
-            y_prob: probability of outcome to happen from model
-            y_data: categorical actual values 
+            model: model name 
+            ds: Dataset
         """
-        y_data = y_data.map({self.the_other_class:0,self.class_predicted:1})
-        fpr, tpr, thresholds = roc_curve(y_data, y_prob[:,1])
+        ds_index = self.ds_list.index(ds)
+        y_prob = self.model_dict[model][1][ds_index]
+        y_actual = self.y_actual[ds_index].map({self.the_other_class:0,self.class_predicted:1})
+        fpr, tpr, thresholds = roc_curve(y_actual, y_prob)
         roc_auc = auc(fpr, tpr)
+        return model, ds, fpr, tpr, roc_auc
+    
+    def roc_plot(self, fpr, tpr, roc_auc):
+        """
+        Creates ROC Curve
+        Args:
+        """
         plt.figure(figsize=(3, 2))
         plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = %0.2f)' % roc_auc)
         plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
