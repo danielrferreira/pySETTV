@@ -167,7 +167,21 @@ class problem:
         y_actual = self.y_actual[ds_index].map({self.the_other_class:0,self.class_predicted:1})
         fpr, tpr, thresholds = roc_curve(y_actual, y_prob)
         roc_auc = auc(fpr, tpr)
-        return model, ds, fpr, tpr, roc_auc
+        n = len(fpr)
+        return fpr, tpr, roc_auc, n
+    
+    def all_roc(self):
+        results = pd.DataFrame()
+        for m in self.model_list:
+            for ds in self.ds_list:
+                temp = pd.DataFrame()
+                fpr, tpr, roc_auc, n = self.roc_data_model_ds(m,ds)
+                temp['model'] = [m] * n 
+                temp['ds'] = [ds] * n
+                temp['fpr'] = fpr
+                temp['tpr'] = tpr
+                results = pd.concat([results, temp], ignore_index=True)
+        return results
     
     def roc_plot(self, fpr, tpr, roc_auc):
         """
