@@ -157,7 +157,7 @@ class problem:
 
     def roc_data_model_ds(self,model,ds):
         """
-        Creates ROC Curve
+        Creates data needed for ROC plot
         Args:
             model: model name 
             ds: Dataset
@@ -170,7 +170,10 @@ class problem:
         n = len(fpr)
         return fpr, tpr, roc_auc, n
     
-    def all_roc(self):
+    def all_roc_table(self):
+        """
+        Appends data from all models and datasets
+        """        
         results = pd.DataFrame()
         for m in self.model_list:
             for ds in self.ds_list:
@@ -183,6 +186,20 @@ class problem:
                 results = pd.concat([results, temp], ignore_index=True)
         return results
     
+    def all_roc_plot(self):
+        df = self.all_roc_table()
+        n_graphs = len(self.ds_list)
+        fig, axes = plt.subplots(nrows = 1, ncols = n_graphs, figsize=(10, 4)) 
+        axes=axes.flatten()
+        palette = sns.color_palette('tab10', len(df['model'].unique()))
+        hue_order = df['model'].unique()
+        color_map = {model: color for model, color in zip(hue_order, palette)}
+        for ax, ds in zip(axes, self.ds_list):
+            filtered = df[df['ds']== ds]
+            sns.lineplot(data = filtered, x = 'fpr', y = 'tpr', ax=ax, hue = 'model', palette=color_map)
+            ax.set_title(ds)
+        plt.show()
+
     def roc_plot(self, fpr, tpr, roc_auc):
         """
         Creates ROC Curve
