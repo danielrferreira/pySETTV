@@ -1,4 +1,4 @@
-# [pySETTV (WIP)](https://github.com/danielrferreira/pySETTV/tree/main)
+# pySETTV
 Codes to Sample, Explore, Transform, Train Models and Validate Models. 
 
 This repository is a collection of code snippets I created while studying Python and translating methods I previously used with SAS and R. It also reflects some of my professional experience working with these techniques.
