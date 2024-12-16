@@ -193,32 +193,44 @@ class problem:
                 results = pd.concat([results, temp], ignore_index=True)
         return results
     
-    def all_roc_plot(self):
+    def all_roc_plot(self, graph_size = 4):
+        """
+        Creates ROC Curve with all models + baseline
+        Args:
+            graph_size: Adjust total size of graph
+        """
         df = self.all_roc_table()
         n_graphs = len(self.ds_list)
-        fig, axes = plt.subplots(nrows = 1, ncols = n_graphs, figsize=(10, 4)) 
+        fig, axes = plt.subplots(nrows = 1, ncols = n_graphs, figsize=(n_graphs*graph_size*0.9, graph_size)) 
         axes=axes.flatten()
         palette = sns.color_palette('tab10', len(df['model'].unique()))
         hue_order = df['model'].unique()
         color_map = {model: color for model, color in zip(hue_order, palette)}
         for ax, ds in zip(axes, self.ds_list):
             filtered = df[df['ds']== ds]
-            sns.lineplot(data = filtered, x = 'fpr', y = 'tpr', ax=ax, hue = 'model', palette=color_map)
+            sns.lineplot(data = filtered, x = 'fpr', y = 'tpr', ax=ax, hue = 'model', palette=color_map, legend=None)
             ax.set_title(ds)
+        legend_handles = [Patch(color=color, label=model) for model, color in color_map.items()]
+        fig.legend(handles=legend_handles, loc= 'center left', ncol=1, title='Model Names', bbox_to_anchor=(1.01, 0.5))
+        fig.suptitle(f"Receiver Operating Characteristic", fontsize=16, y=0.95) 
+        plt.tight_layout()
         plt.show()
 
-    def roc_plot(self, fpr, tpr, roc_auc):
+    def roc_plot(self, model, ds):
         """
-        Creates ROC Curve
+        Creates Indivual ROC Curve
         Args:
+            model: model name 
+            ds: Dataset
         """
-        plt.figure(figsize=(3, 2))
+        fpr, tpr, roc_auc, n = self.roc_data_model_ds(model,ds)
+        plt.figure(figsize=(3, 3))
         plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = %0.2f)' % roc_auc)
         plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
         plt.xlim([0, 1])
         plt.ylim([0, 1.05])
         plt.xlabel('False Positive Rate')
         plt.ylabel('True Positive Rate')
-        plt.title(f'Receiver Operating Characteristic - {self.name_outcome} - {self.class_predicted}')
+        plt.title(f'{model} - {ds} - {self.name_outcome} - {self.class_predicted}')
         plt.legend(loc="lower right")
         plt.show()
