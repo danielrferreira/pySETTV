@@ -175,6 +175,13 @@ class problem:
         Appends data from all models and datasets
         """        
         results = pd.DataFrame()
+        for ds in self.ds_list:
+            temp = pd.DataFrame()
+            temp['model'] = ['Baseline'] * 2 
+            temp['ds'] = [ds] * 2
+            temp['fpr'] = [0,1]
+            temp['tpr'] = [0,1]
+            results = pd.concat([results, temp], ignore_index=True)
         for m in self.model_list:
             for ds in self.ds_list:
                 temp = pd.DataFrame()
