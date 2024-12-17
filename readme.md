@@ -62,7 +62,7 @@ This resource is not focused on deep learning. Instead, it is better suited for 
 - [Fit Statistics & Graphs for Quantitative Outcome](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Quantitative)
 - [Fit Statistics & Graphs for Categorical Outcome](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Classification)
 - [Linear Regressions Assumptions Check](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Linear%20Regression%20Assumptions)
-- [Model Comparison - WIP](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Model%20Comparison)
+- [Model Comparison](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Model%20Comparison)
 - [Cross-Validation](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Cross%20Validation)
 ## [06 - Utility & References](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References)
 * [File Import](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20&%20References/File%20Import):
