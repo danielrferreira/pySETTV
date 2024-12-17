@@ -151,7 +151,7 @@ class problem:
             ax.set_visible(False)
         legend_handles = [Patch(color=color, label=model) for model, color in color_map.items()]
         fig.legend(handles=legend_handles, loc='upper center', ncol=len(hue_order), title='Model Names', bbox_to_anchor=(0.5, 1))
-        fig.suptitle(f"Fit Statistics for {ds} dataset", fontsize=16, y=1.03) 
+        fig.suptitle(f"Fit Statistics for {ds} dataset - {self.name_outcome}", fontsize=16, y=1.03) 
         plt.tight_layout(rect=[0, 0, 1, 0.98])
         plt.show()
 
@@ -212,9 +212,17 @@ class problem:
             ax.set_title(ds)
         legend_handles = [Patch(color=color, label=model) for model, color in color_map.items()]
         fig.legend(handles=legend_handles, loc= 'center left', ncol=1, title='Model Names', bbox_to_anchor=(1.01, 0.5))
-        fig.suptitle(f"Receiver Operating Characteristic", fontsize=16, y=0.95) 
+        fig.suptitle(f"Receiver Operating Characteristic - {self.name_outcome}", fontsize=16, y=0.95) 
         plt.tight_layout()
         plt.show()
+    
+    def show_roc_auc_table(self):
+        """"
+        Show table with ROC formatted values
+        """
+        df = self.stat_table_transposed()
+        df = df[['model_name'] + [col for col in df.columns if 'roc_auc' in col]]
+        return df.style.apply(self.highlight_best, axis=0)
 
     def roc_plot(self, model, ds):
         """
@@ -225,12 +233,11 @@ class problem:
         """
         fpr, tpr, roc_auc, n = self.roc_data_model_ds(model,ds)
         plt.figure(figsize=(3, 3))
-        plt.plot(fpr, tpr, color='darkorange', lw=2, label='ROC curve (area = %0.2f)' % roc_auc)
+        plt.plot(fpr, tpr, color='darkorange', lw=2)
         plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
         plt.xlim([0, 1])
         plt.ylim([0, 1.05])
         plt.xlabel('False Positive Rate')
         plt.ylabel('True Positive Rate')
-        plt.title(f'{model} - {ds} - {self.name_outcome} - {self.class_predicted}')
-        plt.legend(loc="lower right")
+        plt.title(f'{model} - {ds}: AUC: {round(roc_auc,3)}')
         plt.show()
