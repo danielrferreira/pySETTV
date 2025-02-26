@@ -3,6 +3,8 @@ The Explore phase shouldn’t be considered a single step, as this framework is 
 
 Many of the multi-plotting methods I used could benefit from refinement. For a more robust approach, check out this class, which features an improved coding structure and automatically removes unused subplots.
 
+I also added a folder with some examples and a file called eda_aid.py with a class that can be used to analyze data.
+
 * [Table Overall Structure](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Overall%20Structure)
 * [Univariate](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate):
   - [Missing Report](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Univariate/Missing)
@@ -20,3 +22,4 @@ Many of the multi-plotting methods I used could benefit from refinement. For a m
 * [Dimension Reduction]():
   - [Feature Ranking](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Dimension%20Reduction/Feature%20Ranking)
   - [Principal Components](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Dimension%20Reduction/PCA)
+* [Example](https://github.com/danielrferreira/pySETTV/tree/main/02%20-%20Explore/Example)
