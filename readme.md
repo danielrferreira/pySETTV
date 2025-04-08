@@ -58,7 +58,7 @@ This resource is not focused on deep learning. Instead, it is better suited for 
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
 - [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
-- [Time Series]()
+- [Time Series](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Time%20Series)
 ## [05 - Validate Models](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate)
 - [Fit Statistics & Graphs for Quantitative Outcome](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Quantitative)
 - [Fit Statistics & Graphs for Categorical Outcome](https://github.com/danielrferreira/pySETTV/tree/main/05%20-%20Validate/Classification)
