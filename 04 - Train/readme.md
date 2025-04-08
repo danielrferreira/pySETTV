@@ -15,3 +15,4 @@ I’ve included a feature-ranking application in the Random Forest code, which I
 - [Support Vector Machine](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/SVM)
 - [Naive Bayes](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/Naive%20Bayes)
 - [K-Nearest Neighbors](https://github.com/danielrferreira/pySETTV/tree/main/04%20-%20Train/KNN)
+- [Time Series]()
