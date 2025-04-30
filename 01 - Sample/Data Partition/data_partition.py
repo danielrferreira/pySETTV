@@ -26,7 +26,7 @@ def data_partition(data, train_ratio=0.5, val_ratio=0.5, test_ratio=0, seed=420)
 #%%
 # Examples
 import pandas as pd
-baseball = pd.read_csv('/Users/danielferreira/Documents/repositories/pySTETV/Sample/Data Partition/baseball_stats_batting_2020_2023.csv')
+baseball = pd.read_csv('../../06 - Utility & References/Data/baseball_stats_batting_2020_2023.csv')
 
 #%%
 # For 50/50 Train/Validation
