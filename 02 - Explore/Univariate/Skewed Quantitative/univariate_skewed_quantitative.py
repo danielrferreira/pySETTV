@@ -7,7 +7,7 @@ Created on Thu Nov  2 13:03:50 2023
 """
 
 # Import Data
-folder = '/Users/danielferreira/Documents/repositories/pySTETV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 import os
 import pandas as pd

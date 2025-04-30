@@ -5,11 +5,8 @@ Created on Thu Oct 17 10:19:42 2023
 
 @author: danielferreira
 """
-
-from os import chdir
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/01 - Sample/Stratified')
 import pandas as pd
-baseball = pd.read_csv('batting_2021_2022_2023.csv')
+baseball = pd.read_csv('../../06 - Utility & References/Data/batting_2021_2022_2023.csv')
 
 #%%
 # To sample using strata variables we can use groupby method to later call sample method using apply and a lambda function

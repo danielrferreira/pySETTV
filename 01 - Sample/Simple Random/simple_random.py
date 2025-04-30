@@ -39,7 +39,7 @@ def sample(data_in,mode='percent',size_smp=0.2,repl=False,seed_smp=None):
 #%%
 # Examples:
 import pandas as pd
-baseball = pd.read_csv('/Users/danielferreira/Documents/repositories/pySTETV/Sample/Data Partition/baseball_stats_batting_2020_2023.csv')
+baseball = pd.read_csv('../../06 - Utility & References/Data/baseball_stats_batting_2020_2023.csv')
 
 #%%
 # Simple 20% sample using arbitrary seed. It will return a different sample everytime you run.

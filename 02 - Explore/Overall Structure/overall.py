@@ -6,7 +6,7 @@ Created on Tue Oct 31 13:52:28 2023
 @author: danielferreira
 """
 
-folder = '/Users/danielferreira/Documents/repositories/pySTETV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 
 #%%
