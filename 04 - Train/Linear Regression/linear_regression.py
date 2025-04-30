@@ -8,7 +8,7 @@ Created on Fri Dec 29 19:20:38 2023
 import numpy as np
 import pandas as pd
 import os
-folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'bat_22_clean.csv'
 index = 'player_id'
 os.chdir(folder)
