@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, make_scorer
 
 # Setup
-folder = '/Users/danielferreira/Documents/git/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'batting_2021_2024.csv'
 index = 'player_id'
 bat = pd.read_csv(folder+'/'+file, index_col=index)

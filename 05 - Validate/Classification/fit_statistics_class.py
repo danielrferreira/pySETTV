@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.linear_model import LogisticRegression
 import os
-folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 index = 'player_id'
 os.chdir(folder)

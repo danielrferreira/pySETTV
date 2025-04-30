@@ -7,7 +7,7 @@ Created on Wed Oct 25 12:19:19 2023
 """
 
 # Import the data, you can find this tables on https://github.com/danielrferreira/pySTETV/tree/main/06%20-%20Utility%20%26%20References/Data/Processing%20Data/Baseball
-folder = '/Users/danielferreira/Documents/Python_training/baseball_batting'
+folder = '../../06 - Utility & References/Data'
 from os import chdir
 chdir(folder)
 import pandas as pd

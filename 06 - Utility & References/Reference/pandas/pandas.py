@@ -214,7 +214,7 @@ df.add(new_feature,axis='index') # Bam!!!
 # Apply is an usefull method for data manipulation, many times we need to do the same thing accross columns or rows. Creating a function (or a lambda function) and then refering it using apply can help.
 # Let's say we need to normalize the data to squeeze all values to be between 0 and 1
 from os import chdir
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/02 - Transform/Aggregate')
+chdir('../../06 - Utility & References/Data')
 import pandas as pd
 baseball_raw = pd.read_csv('batting_2021_2022_2023.csv', index_col='player_id')
 baseball = baseball_raw[['player_age', 'home_run', 'k_percent', 'bb_percent','batting_avg','sprint_speed']]

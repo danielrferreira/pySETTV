@@ -75,7 +75,7 @@ df_pack.df_module_1.soma(1,2)
 #%%
 # This example uses a function inside df_module_2 that import a txt into a dictionary
 header = ('artist','album','country','region','year_artist','label','year_album')                   
-input_file='input2.txt'
+input_file='06 - Utility & References/Data/input2.txt'
 db = df_pack.df_module_2.import_file(input_file,header)  
 
 

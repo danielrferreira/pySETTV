@@ -1,3 +1,4 @@
 This folder contains csv files we will use in our examples:
- - Titanic.csv
- - Baseball.csv
+ - Unfamous Titanic
+ - Baseball Batting Stats
+ - Weight Time Series
