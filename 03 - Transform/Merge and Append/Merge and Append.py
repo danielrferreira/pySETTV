@@ -8,7 +8,7 @@ Created on Thu Oct 17 10:19:42 2023
 
 # You can ignore the code below, it just creates tables to use in the example:
 from os import chdir
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/01 - Sample/Stratified')
+chdir('../../06 - Utility & References/Data')
 import pandas as pd
 baseball = pd.read_csv('batting_2021_2022_2023.csv', index_col='player_id')
 bb_2022 = baseball[baseball['year']==2022]

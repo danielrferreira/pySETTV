@@ -16,7 +16,7 @@ Created on Sun Dec 17 13:39:51 2023
 import numpy as np
 import pandas as pd
 import os
-folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 index = 'player_id'
 os.chdir(folder)

@@ -8,7 +8,7 @@ Created on Sat Oct 21 09:11:50 2023
 
 # You can ignore this next part
 from os import chdir
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/02 - Transform/Aggregate')
+chdir('../../06 - Utility & References/Data')
 import pandas as pd
 baseball = pd.read_csv('batting_2021_2022_2023.csv', index_col='player_id')
 
