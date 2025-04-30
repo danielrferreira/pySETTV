@@ -8,10 +8,8 @@ Created on Sat Oct 14 15:18:24 2023
 # Filter data examples
 
 import pandas as pd
-from os import chdir
 
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/06 - Utility & References/Data')
-batting_all = pd.read_csv('batting_2021_2022_2023.csv')
+batting_all = pd.read_csv('../../06 - Utility & References/Data/batting_2021_2022_2023.csv')
 print(batting_all.shape)
 print(batting_all.columns)
 batting_all.head()

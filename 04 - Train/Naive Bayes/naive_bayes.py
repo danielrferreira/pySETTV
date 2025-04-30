@@ -11,7 +11,7 @@ import pandas as pd
 import os
 from sklearn.naive_bayes import MultinomialNB, BernoulliNB, GaussianNB
 from sklearn.metrics import accuracy_score, classification_report
-folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 index = 'player_id'
 os.chdir(folder)

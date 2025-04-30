@@ -7,7 +7,7 @@ import os
 import math
 
 
-folder = '/Users/danielferreira/Documents/git/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'bat_22_clean.csv'
 index = 'player_id'
 os.chdir(folder)

@@ -36,7 +36,7 @@ def import_file(input_file,header,delimiter=','):
 #%%
 #Function call example
 header = ('artist','album','country','region','year_artist','label','year_album')                    
-input_file='input2.txt'
+input_file='../../06 - Utility & References/Data/input2.txt'
 db = import_file(input_file,header) 
 
 #%%

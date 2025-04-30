@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 from sklearn.tree import DecisionTreeClassifier, plot_tree, export_text
 import os
-folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 index = 'player_id'
 os.chdir(folder)

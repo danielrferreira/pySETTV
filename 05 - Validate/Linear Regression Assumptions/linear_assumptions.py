@@ -7,7 +7,7 @@ import os
 import scipy.stats as stats
 from statsmodels.graphics.tsaplots import plot_acf
 
-folder = '/Users/danielferreira/Documents/git/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'bat_22_clean.csv'
 index = 'player_id'
 os.chdir(folder)

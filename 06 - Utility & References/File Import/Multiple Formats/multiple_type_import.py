@@ -51,4 +51,4 @@ def read_all(file_in,delimiter=','):
     
 #%%
 # How to call the function:
-titanic = read_all('/Users/jimihendrix/Documents/repositories/pySTETV/Utility/File Import/raw data/titanic.csv')
+titanic = read_all('../../06 - Utility & References/Data/raw_data')

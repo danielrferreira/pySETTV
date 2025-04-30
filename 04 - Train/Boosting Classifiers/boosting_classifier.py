@@ -11,7 +11,7 @@ import pandas as pd
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import GradientBoostingClassifier, AdaBoostClassifier, HistGradientBoostingClassifier
 import os
-folder = '/Users/danielferreira/Documents/repositories/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 index = 'player_id'
 os.chdir(folder)

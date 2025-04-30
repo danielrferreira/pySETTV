@@ -15,7 +15,7 @@ height_and_weight = pd.DataFrame({'height':height,'weight':weight})
 #%%
 # Remember to change your working directory. In Jupyter, you can use %cd command, or use os module:
 from os import chdir
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/06 - Utility & References/File Export/Graphs') 
+chdir('../../06 - Utility & References/Data/Export') 
 
 #%% pyplot.savefig method is the only thing we will need:
 import matplotlib.pyplot as plt
@@ -52,9 +52,3 @@ plt.scatter(height_and_weight['height'], height_and_weight['weight'])
 plt.title('Height vs Weight Relationship - PDF Version')
 plt.savefig('height_weight1.pdf', format='pdf')
 plt.clf()
-
-
-#%%
-# Remember to change your working directory. In Jupyter, you can use %cd command, or use os module:
-from os import chdir
-chdir('/Users/danielferreira/Documents/repositories/pySTETV/06 - Utility & References/File Export/Graphs') 

@@ -5,7 +5,7 @@ from sklearn.neural_network import MLPClassifier
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score
 
-folder = '/Users/danielferreira/Documents/git/pySETTV/06 - Utility & References/Data'
+folder = '../../06 - Utility & References/Data'
 file = 'player_batting_enriched.csv'
 index = 'player_id'
 bat = pd.read_csv(folder+'/'+file, index_col=index)
