@@ -84,6 +84,4 @@ This resource is not focused on deep learning. Instead, it is better suited for 
   - [NumPy](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/NumPy)
   - [pandas](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Reference/pandas)
 
-* [Data](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Data):
-  - [Titanic.csv](https://github.com/danielrferreira/pySETTV/blob/main/06%20-%20Utility%20%26%20References/Data/train_titanic.csv)
-  - [Baseball.csv](https://github.com/danielrferreira/pySETTV/blob/main/06%20-%20Utility%20%26%20References/Data/batting_2021_2022_2023.csv)
+* [Data](https://github.com/danielrferreira/pySETTV/tree/main/06%20-%20Utility%20%26%20References/Data)
